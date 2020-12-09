@@ -1,3 +1,87 @@
+* {
+  margin: 0;
+  padding: 0; }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px; }
+  header .logo {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 100; }
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: #eaeaea;
+  box-shadow: inset 0em 3px 10px -8px; }
+  .localisation .localisation__info {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px; }
+  .localisation .fa-map-marker-alt {
+    margin-right: 20px; }
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  text-align: center;
+  height: 250px;
+  background-color: #f6f6f6; }
+  .information .information__titre {
+    font-size: 20px;
+    padding: 0px 40px; }
+  .information .information__paragraphe {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0px 10px;
+    margin-top: 10px; }
+  .information .information__button {
+    font-size: 14px;
+    padding: 14px 20px;
+    border-radius: 9999px;
+    border: none;
+    background: linear-gradient(174deg, #FF79DA, #9356DC);
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 0px; }
+
+.fonctionnement .fonctionnement__title {
+  font-family: "Roboto", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding-left: 20px; }
+.fonctionnement .fonctionnement__box {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  margin: 20px 20px;
+  padding: 20px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px -20px; }
+  .fonctionnement .fonctionnement__box .fonctionnement-box__circle {
+    position: absolute;
+    left: 3%;
+    color: #ffffff;
+    background-color: #9356DC;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border-radius: 100%; }
+  .fonctionnement .fonctionnement__box .fonctionnement-box__icon {
+    margin-left: 10px; }
+    .fonctionnement .fonctionnement__box .fonctionnement-box__icon .fa-store {
+      font-size: 14px;
+      margin-left: -4px; }
+  .fonctionnement .fonctionnement__box .fonctionnement-box__paragraphe {
+    margin-top: 4px;
+    padding: 0px 20px;
+    font-weight: 500;
+    font-size: 0.9rem; }
 
 /*# sourceMappingURL=style.css.map */

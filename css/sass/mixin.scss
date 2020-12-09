@@ -1,0 +1,13 @@
+@mixin flexmid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin font-family-primary {
+    font-family: "Shrikhand", sans-serif;
+}
+
+@mixin font-family-secondary {
+    font-family: "Roboto", sans-serif;
+}

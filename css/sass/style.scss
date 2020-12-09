@@ -1,0 +1,130 @@
+       // Variable
+       
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiaire: #99E2D0;
+$color-grey: #f6f6f6;
+        
+        
+        // ALL
+@import "mixin.scss";
+        
+
+* {
+    margin: 0;
+    padding: 0;
+}
+        
+             
+        // HEADER 
+
+header {
+    @include flexmid;
+    height: 65px;
+
+    .logo {
+        @include font-family-primary;
+        font-size: 1.6rem;
+        font-weight: 100;
+    }
+}        
+
+
+
+        // TOP MAIN 
+
+.localisation {
+    @include flexmid;
+    height: 50px;
+    background: #eaeaea;
+    box-shadow: inset 0em 3px 10px -8px;
+
+    .localisation__info {
+        @include font-family-secondary;
+        font-size: 15px;
+    }
+
+    .fa-map-marker-alt {
+        margin-right: 20px;
+    }
+}
+
+.information {
+    @include flexmid;
+    @include font-family-secondary;
+    flex-direction: column;
+    text-align: center;
+    height: 250px;
+    background-color: $color-grey;
+    
+
+    .information__titre {
+        font-size: 20px;
+        padding: 0px 40px;
+    }
+
+    .information__paragraphe {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 0px 10px;
+        margin-top: 10px;
+    }
+
+    .information__button {
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 9999px;
+        border: none;
+        background: linear-gradient(174deg, $color-secondary, $color-primary);
+        color: #ffffff;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+}
+
+        // FONCTIONNEMENT
+
+.fonctionnement {
+    .fonctionnement__title {
+        @include font-family-secondary;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    .fonctionnement__box {
+        @include font-family-secondary;
+        display: flex;
+        margin: 20px 20px;
+        padding: 20px;
+        background-color: $color-grey;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px -20px;
+
+        .fonctionnement-box__circle {
+            position: absolute;
+            left: 3%;
+            color: #ffffff;
+            background-color: $color-primary;
+            padding: 4px 8px;
+            font-size: 0.8rem;
+            border-radius: 100%;
+        }
+
+        .fonctionnement-box__icon {
+            margin-left: 10px;
+
+            .fa-store {
+                font-size: 14px;
+                margin-left: -4px;
+            }
+        }
+
+        .fonctionnement-box__paragraphe {
+            margin-top: 4px;
+            padding: 0px 20px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+    }
+}
