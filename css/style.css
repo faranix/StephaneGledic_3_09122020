@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0; }
 
+a {
+  text-decoration: none;
+  color: currentColor; }
+
 header {
   display: flex;
   justify-content: center;
@@ -74,14 +78,97 @@ header {
     font-size: 0.8rem;
     border-radius: 100%; }
   .fonctionnement .fonctionnement__box .fonctionnement-box__icon {
-    margin-left: 10px; }
+    margin-left: 10px;
+    color: #7e7e7e; }
     .fonctionnement .fonctionnement__box .fonctionnement-box__icon .fa-store {
       font-size: 14px;
-      margin-left: -4px; }
+      margin-left: -4px;
+      color: #9356DC; }
   .fonctionnement .fonctionnement__box .fonctionnement-box__paragraphe {
     margin-top: 4px;
     padding: 0px 20px;
     font-weight: 500;
     font-size: 0.9rem; }
+.fonctionnement .fonctionnement__color3 {
+  background-color: #f5edff; }
+
+.restaurant {
+  background-color: #f6f6f6; }
+  .restaurant .restaurant__titre {
+    font-family: "Roboto", sans-serif;
+    padding-top: 40px;
+    padding-left: 20px;
+    margin-bottom: 15px; }
+  .restaurant .restaurant__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px; }
+    .restaurant .restaurant__box .restaurant-box__article {
+      margin: 10px 0px; }
+      .restaurant .restaurant__box .restaurant-box__article .restaurant__nouveau {
+        font-family: "Roboto", sans-serif;
+        position: relative;
+        max-width: 70px;
+        padding: 3px 5px;
+        left: 210px;
+        top: 15px;
+        color: #008766;
+        background-color: #99e2d0;
+        text-align: center;
+        font-size: 12px; }
+      .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox {
+        font-family: "Roboto", sans-serif;
+        background-color: #ffffff;
+        margin-top: 153px;
+        height: 75px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        font-size: 14px; }
+        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .restaurant-box__like {
+          font-size: 20px; }
+        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .restaurant-litlebox-content__titre {
+          font-weight: 700;
+          margin-bottom: 5px; }
+        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .restaurant-litlebox-content__paragraphe {
+          font-weight: 300; }
+        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .heart {
+          color: #9356DC;
+          position: relative;
+          left: 25px; }
+          .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .heart:active {
+            display: none; }
+    .restaurant .restaurant__box .restaurant__img-1 {
+      background: url(/ressource/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
+      background-size: contain;
+      background-position-y: -50%;
+      min-width: 100%;
+      height: 250px;
+      border-radius: 20px; }
+    .restaurant .restaurant__box .restaurant__img-2 {
+      background: url(/ressource/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;
+      background-size: contain;
+      background-position-y: -50%;
+      min-width: 100%;
+      height: 250px;
+      border-radius: 20px; }
+    .restaurant .restaurant__box .restaurant__img-3 {
+      background: url(/ressource/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat;
+      background-size: contain;
+      background-position-y: -50%;
+      min-width: 100%;
+      height: 250px;
+      border-radius: 20px; }
+    .restaurant .restaurant__box .restaurant__img-4 {
+      background: url(/ressource/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
+      background-size: contain;
+      background-position-y: -50%;
+      min-width: 100%;
+      height: 250px;
+      border-radius: 20px; }
 
 /*# sourceMappingURL=style.css.map */

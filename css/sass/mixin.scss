@@ -11,3 +11,11 @@
 @mixin font-family-secondary {
     font-family: "Roboto", sans-serif;
 }
+
+@mixin restaurant-img__setting {
+    background-size: contain;
+    background-position-y: -50%;   
+    min-width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}

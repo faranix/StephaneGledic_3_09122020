@@ -4,6 +4,7 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiaire: #99E2D0;
 $color-grey: #f6f6f6;
+$color-icons: #7e7e7e;
         
         
         // ALL
@@ -13,6 +14,11 @@ $color-grey: #f6f6f6;
 * {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
 }
         
              
@@ -113,10 +119,12 @@ header {
 
         .fonctionnement-box__icon {
             margin-left: 10px;
+            color: $color-icons;
 
             .fa-store {
                 font-size: 14px;
                 margin-left: -4px;
+                color: $color-primary;
             }
         }
 
@@ -127,4 +135,106 @@ header {
             font-size: 0.9rem;
         }
     }
+
+    .fonctionnement__color3 {
+        background-color: #f5edff;
+    }
 }
+
+
+        // Restaurants
+
+
+ .restaurant {
+    background-color: $color-grey;
+
+    .restaurant__titre {
+        @include font-family-secondary;
+        padding-top: 40px;
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .restaurant__box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px;
+
+        .restaurant-box__article {
+            margin: 10px 0px;
+
+            .restaurant__nouveau {
+                @include font-family-secondary;
+                position: relative;
+                max-width: 70px;
+                padding: 3px 5px;
+                left: 210px;
+                top: 15px;
+                color: #008766;
+                background-color: #99e2d0;
+                text-align: center;
+                font-size: 12px;
+            }
+
+            .restaurant-litlebox {
+                @include font-family-secondary;
+                background-color: #ffffff;
+                margin-top: 153px;
+                height: 75px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0px 20px;
+                font-size: 14px;
+
+                .restaurant-box__like {
+                    font-size: 20px;
+                }
+
+                .restaurant-litlebox-content__titre {
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+
+                .restaurant-litlebox-content__paragraphe {
+                    font-weight: 300;
+                }
+
+                .heart {
+                    color: $color-primary;
+                    position: relative;
+                    left: 25px;
+
+                    &:active {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .restaurant__img-1 {
+            background: url(/ressource/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat;
+            @include restaurant-img__setting;
+        }
+
+        .restaurant__img-2 {
+            // Bug Images a Resoudre !
+            background: url(/ressource/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat;
+            @include restaurant-img__setting;
+    
+        }
+
+        .restaurant__img-3 {
+            background: url(/ressource/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat;
+            @include restaurant-img__setting;
+        }
+
+        .restaurant__img-4 {
+            background: url(/ressource/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat;
+            @include restaurant-img__setting;
+        }
+    }
+ }
