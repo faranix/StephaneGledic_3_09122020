@@ -1,0 +1,126 @@
+       // Variable
+       
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiaire: #99E2D0;
+$color-grey: #f6f6f6;
+$color-icons: #7e7e7e;
+               
+               
+        // ALL
+@import "mixin.scss", "animation.scss";
+               
+       
+* {
+    margin: 0;
+    padding: 0;
+}
+       
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+               
+                    
+        // HEADER 
+       
+header {
+    @include flexmid;
+    height: 55px;
+
+    .header__fleche {
+        margin-left: -70px;
+    }
+        
+    .logo {
+        @include font-family-primary;
+        font-size: 1.5rem;
+        font-weight: 100;
+        max-width: 50%;
+        
+    }
+}  
+
+
+    // MAIN
+
+.images {
+    max-width: 100%;
+}
+
+.menu {
+    position: relative;
+    bottom: 45px;
+    height: 1000px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #ffffff;
+
+    .menu__boxtitre {
+        @include font-family-primary;
+        padding-top: 30px;
+        padding-left: 15px;
+        display: flex;
+        align-items: center;
+
+        .menu-boxtitre__titre {
+            font-size: 20px;
+            font-weight: 200;
+        }
+
+        .heart {
+            color: $color-primary;
+            position: relative;
+            left: 25px;
+            cursor: pointer;
+            opacity: 0;
+
+            &:active{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+footer {
+    @include padding-width;
+    height: 150px;
+    padding-top: 20px;
+    padding-left: 10px;
+    background-color: #353535;
+    color: #ffffff;
+    @include font-family-secondary;
+
+    .footer__titre {
+        @include font-family-primary;
+        font-weight: 100;
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .footer__box {
+        margin-bottom: 5px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+
+        .footer-box__paragraphe {
+            margin-left: 5px;
+        }
+    }
+
+    .footer__icon {
+          font-size: 10px;  
+    }
+
+    .footer__paragraphe {
+        font-size: 12px;
+        margin-bottom: 5px;
+        font-weight: 300;
+    }
+}
+       
+       
+       

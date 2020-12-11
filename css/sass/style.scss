@@ -26,12 +26,13 @@ a {
 
 header {
     @include flexmid;
-    height: 65px;
-
+    height: 55px;
+                
     .logo {
         @include font-family-primary;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         font-weight: 100;
+        max-width: 50%;
     }
 }        
 
@@ -91,6 +92,7 @@ header {
         // FONCTIONNEMENT
 
 .fonctionnement {
+    @include padding-width;
     .fonctionnement__title {
         @include font-family-secondary;
         margin-top: 40px;
@@ -109,7 +111,7 @@ header {
 
         .fonctionnement-box__circle {
             position: absolute;
-            left: 3%;
+            left: 6%;
             color: #ffffff;
             background-color: $color-primary;
             padding: 4px 8px;
@@ -147,6 +149,7 @@ header {
 
  .restaurant {
     background-color: $color-grey;
+    @include padding-width;
 
     .restaurant__titre {
         @include font-family-secondary;
@@ -169,7 +172,7 @@ header {
                 position: relative;
                 max-width: 70px;
                 padding: 3px 5px;
-                left: 210px;
+                left: 180px;
                 top: 35px;
                 color: #008766;
                 background-color: #99e2d0;
@@ -209,7 +212,7 @@ header {
                     cursor: pointer;
                     opacity: 0;
 
-                    &:hover{
+                    &:active{
                         opacity: 1;
                     }
                 }
@@ -227,7 +230,8 @@ header {
         // FOOTER
 
 footer {
-    height: 150px;
+    @include padding-width;
+    height: 130px;
     padding-top: 20px;
     padding-left: 10px;
     background-color: #353535;
@@ -238,9 +242,27 @@ footer {
         @include font-family-primary;
         font-weight: 100;
         font-size: 11px;
+        margin-bottom: 10px;
     }
 
     .footer__box {
-        font-size: 10px;
+        margin-bottom: 5px;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+
+        .footer-box__paragraphe {
+            margin-left: 5px;
+        }
+    }
+
+    .footer__icon {
+          font-size: 10px;  
+    }
+
+    .footer__paragraphe {
+        font-size: 12px;
+        margin-bottom: 5px;
+        font-weight: 300;
     }
 }
