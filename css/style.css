@@ -1,3 +1,187 @@
+* {
+  margin: 0;
+  padding: 0; }
 
+a {
+  text-decoration: none;
+  color: currentColor; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px; }
+  header .logo {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    max-width: 50%; }
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background: #eaeaea;
+  box-shadow: inset 0em 3px 10px -8px; }
+  .localisation .localisation__info {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px; }
+  .localisation .fa-map-marker-alt {
+    margin-right: 20px; }
+
+.information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  flex-direction: column;
+  text-align: center;
+  height: 250px;
+  background-color: #f6f6f6; }
+  .information .information__titre {
+    font-size: 20px;
+    padding: 0px 40px; }
+  .information .information__paragraphe {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 0px 10px;
+    margin-top: 10px; }
+  .information .information__button {
+    font-size: 14px;
+    padding: 14px 20px;
+    border-radius: 9999px;
+    border: none;
+    background: linear-gradient(174deg, #FF79DA, #9356DC);
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 0px; }
+
+.fonctionnement {
+  padding: 0 10px; }
+  .fonctionnement .fonctionnement__title {
+    font-family: "Roboto", sans-serif;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 20px; }
+  .fonctionnement .fonctionnement__box {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    margin: 20px 20px;
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px -20px; }
+    .fonctionnement .fonctionnement__box .fonctionnement-box__circle {
+      position: absolute;
+      left: 6%;
+      color: #ffffff;
+      background-color: #9356DC;
+      padding: 4px 8px;
+      font-size: 0.8rem;
+      border-radius: 100%; }
+    .fonctionnement .fonctionnement__box .fonctionnement-box__icon {
+      margin-left: 10px;
+      color: #7e7e7e; }
+      .fonctionnement .fonctionnement__box .fonctionnement-box__icon .fa-store {
+        font-size: 14px;
+        margin-left: -4px;
+        color: #9356DC; }
+    .fonctionnement .fonctionnement__box .fonctionnement-box__paragraphe {
+      margin-top: 4px;
+      padding: 0px 20px;
+      font-weight: 500;
+      font-size: 0.9rem; }
+  .fonctionnement .fonctionnement__color3 {
+    background-color: #f5edff; }
+
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 0 10px; }
+  .restaurant .restaurant__titre {
+    font-family: "Roboto", sans-serif;
+    padding-top: 40px;
+    padding-left: 20px;
+    margin-bottom: 15px; }
+  .restaurant .restaurant__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px; }
+    .restaurant .restaurant__box .restaurant-box__article {
+      margin: 10px 0px; }
+      .restaurant .restaurant__box .restaurant-box__article .restaurant__nouveau {
+        font-family: "Roboto", sans-serif;
+        position: relative;
+        max-width: 70px;
+        padding: 3px 5px;
+        left: 180px;
+        top: 35px;
+        color: #008766;
+        background-color: #99e2d0;
+        text-align: center;
+        font-size: 12px; }
+      .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox {
+        font-family: "Roboto", sans-serif;
+        background-color: #ffffff;
+        height: 75px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 20px;
+        font-size: 14px; }
+        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .restaurant-box__like {
+          font-size: 20px; }
+        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .restaurant-litlebox-content__titre {
+          font-weight: 700;
+          margin-bottom: 5px; }
+        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .restaurant-litlebox-content__paragraphe {
+          font-weight: 300; }
+        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .heart {
+          color: #9356DC;
+          position: relative;
+          left: 25px;
+          cursor: pointer;
+          opacity: 0; }
+          .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .heart:active {
+            opacity: 1; }
+    .restaurant .restaurant__box .restaurant__img {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-y: -50%;
+      min-width: 100%;
+      height: 170px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      margin-bottom: -3px; }
+
+footer {
+  padding: 0 10px;
+  height: 130px;
+  padding-top: 20px;
+  padding-left: 10px;
+  background-color: #353535;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif; }
+  footer .footer__titre {
+    font-family: "Shrikhand", sans-serif;
+    font-weight: 100;
+    font-size: 11px;
+    margin-bottom: 10px; }
+  footer .footer__box {
+    margin-bottom: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center; }
+    footer .footer__box .footer-box__paragraphe {
+      margin-left: 5px; }
+  footer .footer__icon {
+    font-size: 10px; }
+  footer .footer__paragraphe {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 300; }
 
 /*# sourceMappingURL=style.css.map */
