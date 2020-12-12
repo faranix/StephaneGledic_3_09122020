@@ -65,19 +65,19 @@ header {
     background-color: $color-grey;
     
 
-    .information__titre {
+    &__titre {
         font-size: 20px;
         padding: 0px 40px;
     }
 
-    .information__paragraphe {
+    &__paragraphe {
         font-size: 15px;
         font-weight: 300;
         padding: 0px 10px;
         margin-top: 10px;
     }
 
-    .information__button {
+    &__button {
         font-size: 14px;
         padding: 14px 20px;
         border-radius: 9999px;
@@ -109,7 +109,7 @@ header {
         border-radius: 20px;
         box-shadow: 10px 10px 20px -20px;
 
-        .fonctionnement-box__circle {
+        &__circle {
             position: absolute;
             left: 6%;
             color: #ffffff;
@@ -119,7 +119,7 @@ header {
             border-radius: 100%;
         }
 
-        .fonctionnement-box__icon {
+        &__icon {
             margin-left: 10px;
             color: $color-icons;
 
@@ -130,7 +130,7 @@ header {
             }
         }
 
-        .fonctionnement-box__paragraphe {
+        &__paragraphe {
             margin-top: 4px;
             padding: 0px 20px;
             font-weight: 500;
@@ -150,24 +150,25 @@ header {
  .restaurant {
     background-color: $color-grey;
     @include padding-width;
+    height: 1200px;
 
-    .restaurant__titre {
+    &__titre {
         @include font-family-secondary;
         padding-top: 40px;
         padding-left: 20px;
         margin-bottom: 15px;
     }
 
-    .restaurant__box {
+    &__box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0 10px;
 
-        .restaurant-box__article {
-            margin: 10px 0px;
+        &__article {
+            margin-bottom: 10px;
 
-            .restaurant__nouveau {
+            &__nouveau {
                 @include font-family-secondary;
                 position: relative;
                 max-width: 70px;
@@ -180,7 +181,7 @@ header {
                 font-size: 12px;
             }
 
-            .restaurant-litlebox {
+            &__litlebox {
                 @include font-family-secondary;
                 background-color: #ffffff;
                 height: 75px;
@@ -192,16 +193,16 @@ header {
                 padding: 0px 20px;
                 font-size: 14px;
 
-                .restaurant-box__like {
+                &__like {
                     font-size: 20px;
                 }
 
-                .restaurant-litlebox-content__titre {
+                &__titre {
                     font-weight: 700;
                     margin-bottom: 5px;
                 }
 
-                .restaurant-litlebox-content__paragraphe {
+                &__paragraphe {
                     font-weight: 300;
                 }
 
@@ -220,7 +221,7 @@ header {
             }
         }
 
-        .restaurant__img {
+        .restaurant__box__img {
             @include restaurant-img__setting;
         }
     }

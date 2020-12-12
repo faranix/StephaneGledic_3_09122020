@@ -1,3 +1,26 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(50deg); }
+  20% {
+    transform: rotate(100deg); }
+  30% {
+    transform: rotate(140deg); }
+  40% {
+    transform: rotate(170deg); }
+  50% {
+    transform: rotate(200deg); }
+  60% {
+    transform: rotate(240deg); }
+  70% {
+    transform: rotate(270deg); }
+  80% {
+    transform: rotate(300deg); }
+  90% {
+    transform: rotate(330deg); }
+  100% {
+    transform: rotate(360deg); } }
 * {
   margin: 0;
   padding: 0; }
@@ -39,15 +62,15 @@ header {
   text-align: center;
   height: 250px;
   background-color: #f6f6f6; }
-  .information .information__titre {
+  .information__titre {
     font-size: 20px;
     padding: 0px 40px; }
-  .information .information__paragraphe {
+  .information__paragraphe {
     font-size: 15px;
     font-weight: 300;
     padding: 0px 10px;
     margin-top: 10px; }
-  .information .information__button {
+  .information__button {
     font-size: 14px;
     padding: 14px 20px;
     border-radius: 9999px;
@@ -72,7 +95,7 @@ header {
     background-color: #f6f6f6;
     border-radius: 20px;
     box-shadow: 10px 10px 20px -20px; }
-    .fonctionnement .fonctionnement__box .fonctionnement-box__circle {
+    .fonctionnement .fonctionnement__box__circle {
       position: absolute;
       left: 6%;
       color: #ffffff;
@@ -80,14 +103,14 @@ header {
       padding: 4px 8px;
       font-size: 0.8rem;
       border-radius: 100%; }
-    .fonctionnement .fonctionnement__box .fonctionnement-box__icon {
+    .fonctionnement .fonctionnement__box__icon {
       margin-left: 10px;
       color: #7e7e7e; }
-      .fonctionnement .fonctionnement__box .fonctionnement-box__icon .fa-store {
+      .fonctionnement .fonctionnement__box__icon .fa-store {
         font-size: 14px;
         margin-left: -4px;
         color: #9356DC; }
-    .fonctionnement .fonctionnement__box .fonctionnement-box__paragraphe {
+    .fonctionnement .fonctionnement__box__paragraphe {
       margin-top: 4px;
       padding: 0px 20px;
       font-weight: 500;
@@ -97,20 +120,21 @@ header {
 
 .restaurant {
   background-color: #f6f6f6;
-  padding: 0 10px; }
-  .restaurant .restaurant__titre {
+  padding: 0 10px;
+  height: 1200px; }
+  .restaurant__titre {
     font-family: "Roboto", sans-serif;
     padding-top: 40px;
     padding-left: 20px;
     margin-bottom: 15px; }
-  .restaurant .restaurant__box {
+  .restaurant__box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 10px; }
-    .restaurant .restaurant__box .restaurant-box__article {
-      margin: 10px 0px; }
-      .restaurant .restaurant__box .restaurant-box__article .restaurant__nouveau {
+    .restaurant__box__article {
+      margin-bottom: 10px; }
+      .restaurant__box__article__nouveau {
         font-family: "Roboto", sans-serif;
         position: relative;
         max-width: 70px;
@@ -121,7 +145,7 @@ header {
         background-color: #99e2d0;
         text-align: center;
         font-size: 12px; }
-      .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox {
+      .restaurant__box__article__litlebox {
         font-family: "Roboto", sans-serif;
         background-color: #ffffff;
         height: 75px;
@@ -132,22 +156,22 @@ header {
         align-items: center;
         padding: 0px 20px;
         font-size: 14px; }
-        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .restaurant-box__like {
+        .restaurant__box__article__litlebox__like {
           font-size: 20px; }
-        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .restaurant-litlebox-content__titre {
+        .restaurant__box__article__litlebox__titre {
           font-weight: 700;
           margin-bottom: 5px; }
-        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .restaurant-litlebox-content__paragraphe {
+        .restaurant__box__article__litlebox__paragraphe {
           font-weight: 300; }
-        .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .heart {
+        .restaurant__box__article__litlebox .heart {
           color: #9356DC;
           position: relative;
           left: 25px;
           cursor: pointer;
           opacity: 0; }
-          .restaurant .restaurant__box .restaurant-box__article .restaurant-litlebox .heart:active {
+          .restaurant__box__article__litlebox .heart:active {
             opacity: 1; }
-    .restaurant .restaurant__box .restaurant__img {
+    .restaurant__box .restaurant__box__img {
       background-size: contain;
       background-repeat: no-repeat;
       background-position-y: -50%;
