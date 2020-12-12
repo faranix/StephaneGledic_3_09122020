@@ -59,7 +59,7 @@ main {
 .background {
     position: relative;
     bottom: 45px;
-    height: 900px;
+    height: 100%;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: $color-grey;
@@ -78,11 +78,12 @@ main {
     &__titre {
         font-size: 20px;
         font-weight: 200;
+        white-space: nowrap;
+        flex: 3;
     }
     
     &__heart {
-        margin-left: 90px;
-
+        flex: 1;
         .fa-heart {
             font-size: 20px;
         }
@@ -151,6 +152,7 @@ main {
     
                 &__prix {
                     font-size: 12px;
+                    margin-right: 5px;
                     font-weight: bold;
                 }
             }

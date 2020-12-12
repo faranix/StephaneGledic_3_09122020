@@ -61,7 +61,7 @@ main {
 .background {
   position: relative;
   bottom: 45px;
-  height: 900px;
+  height: 100%;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: #f6f6f6; }
@@ -74,9 +74,11 @@ main {
   align-items: center; }
   .presentation__boxtitre__titre {
     font-size: 20px;
-    font-weight: 200; }
+    font-weight: 200;
+    white-space: nowrap;
+    flex: 3; }
   .presentation__boxtitre__heart {
-    margin-left: 90px; }
+    flex: 1; }
     .presentation__boxtitre__heart .fa-heart {
       font-size: 20px; }
     .presentation__boxtitre__heart .heart {
@@ -125,6 +127,7 @@ main {
           margin-right: 5px; }
         .menu__article__container__info__prix {
           font-size: 12px;
+          margin-right: 5px;
           font-weight: bold; }
     .menu__article__overlay {
       display: flex;
