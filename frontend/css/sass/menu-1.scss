@@ -21,6 +21,10 @@ a {
     text-decoration: none;
     color: currentColor;
 }
+
+.container {
+    animation: pageAnimation 800ms;
+}
                
                     
         // HEADER 
@@ -38,69 +42,76 @@ header {
         font-size: 1.5rem;
         font-weight: 100;
         max-width: 50%;
-        
     }
 }  
 
 
     // MAIN
 
+main {
+    background-color: $color-grey;
+}
+
 .images {
     max-width: 100%;
 }
 
-.menu {
+.background {
     position: relative;
     bottom: 45px;
-    height: 1000px;
+    height: 900px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     background-color: $color-grey;
+}
+
+        // PRESENTATION
     
 
-    &__boxtitre {
-        @include font-family-primary;
-        padding-top: 30px;
-        padding-left: 15px;
-        display: flex;
-        align-items: center;
+.presentation__boxtitre {
+    @include font-family-primary;
+    padding-top: 30px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
 
-        &__titre {
+    &__titre {
+        font-size: 20px;
+        font-weight: 200;
+    }
+    
+    &__heart {
+        margin-left: 90px;
+
+        .fa-heart {
             font-size: 20px;
-            font-weight: 200;
         }
-        
-        &__heart {
-            margin-left: 90px;
 
-            .fa-heart {
-                font-size: 20px;
-            }
+        .heart {
+            color: $color-primary;
+            position: relative;
+            left: 23px;
+            cursor: pointer;
+            opacity: 0;
 
-            .heart {
-                color: $color-primary;
-                position: relative;
-                left: 23px;
-                cursor: pointer;
-                opacity: 0;
-    
-                &:active{
-                    opacity: 1;
-                }
+            &:active{
+                opacity: 1;
             }
         }
     }
 }
 
 
-        // ENTREE
 
-.entree {
+        // MENU
+
+.menu {
     margin-top: 25px;
     padding: 0 15px;
     @include font-family-secondary;
 
     &__titre {
+        margin-top: 40px;
         font-size: 14px;
         font-weight: 100;
         text-transform: uppercase;
@@ -109,11 +120,13 @@ header {
     }
 
     &__article {
+        margin-top: 15px;
         display: flex;
         position: relative;
         background-color: #fff;
         border-radius: 10px;
         padding: 10px;
+        cursor: pointer;
 
         &__container {
             width: 100%;
@@ -179,6 +192,20 @@ header {
         }
     }
 }
+.commande {
+    @include flexmid;
+    &__button {
+        font-size: 14px;
+        padding: 14px 20px;
+        border-radius: 9999px;
+        border: none;
+        background: linear-gradient(174deg, $color-secondary, $color-primary);
+        color: #ffffff;
+        margin-bottom: 80px;
+        cursor: pointer;
+    }
+}
+
 
 
 
