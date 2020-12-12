@@ -1,0 +1,165 @@
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  10% {
+    transform: rotate(50deg); }
+  20% {
+    transform: rotate(100deg); }
+  30% {
+    transform: rotate(140deg); }
+  40% {
+    transform: rotate(170deg); }
+  50% {
+    transform: rotate(200deg); }
+  60% {
+    transform: rotate(240deg); }
+  70% {
+    transform: rotate(270deg); }
+  80% {
+    transform: rotate(300deg); }
+  90% {
+    transform: rotate(330deg); }
+  100% {
+    transform: rotate(360deg); } }
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: currentColor; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px; }
+  header .header__fleche {
+    margin-left: -70px; }
+  header .logo {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    max-width: 50%; }
+
+.images {
+  max-width: 100%; }
+
+.menu {
+  position: relative;
+  bottom: 45px;
+  height: 1000px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #f6f6f6; }
+  .menu__boxtitre {
+    font-family: "Shrikhand", sans-serif;
+    padding-top: 30px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center; }
+    .menu__boxtitre__titre {
+      font-size: 20px;
+      font-weight: 200; }
+    .menu__boxtitre__heart {
+      margin-left: 90px; }
+      .menu__boxtitre__heart .fa-heart {
+        font-size: 20px; }
+      .menu__boxtitre__heart .heart {
+        color: #9356DC;
+        position: relative;
+        left: 23px;
+        cursor: pointer;
+        opacity: 0; }
+        .menu__boxtitre__heart .heart:active {
+          opacity: 1; }
+
+.entree {
+  margin-top: 25px;
+  padding: 0 15px;
+  font-family: "Roboto", sans-serif; }
+  .entree__titre {
+    font-size: 14px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #8d8c8c; }
+  .entree__article {
+    display: flex;
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px; }
+    .entree__article__container {
+      width: 100%; }
+      .entree__article__container__titre {
+        font-size: 15px;
+        font-weight: bold; }
+      .entree__article__container__info {
+        display: flex;
+        justify-content: space-between; }
+        .entree__article__container__info__paragraphe {
+          font-size: 13px;
+          font-weight: 100;
+          color: #8d8c8c;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          margin-right: 5px; }
+        .entree__article__container__info__prix {
+          font-size: 12px;
+          font-weight: bold; }
+    .entree__article__overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: absolute;
+      bottom: 0px;
+      left: 100%;
+      background-color: #99E2D0;
+      color: #fff;
+      width: 0%;
+      min-height: 57px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      .entree__article__overlay .fa-check-circle {
+        font-size: 20px; }
+    .entree__article__container:hover + .entree__article__overlay {
+      left: 80%;
+      width: 20%;
+      transition: 800ms; }
+      .entree__article__container:hover + .entree__article__overlay .fa-check-circle {
+        animation: rotate 600ms; }
+    .entree__article__container:hover {
+      width: 80%;
+      transition: 800ms; }
+
+footer {
+  padding: 0 10px;
+  height: 150px;
+  padding-top: 20px;
+  padding-left: 10px;
+  background-color: #353535;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif; }
+  footer .footer__titre {
+    font-family: "Shrikhand", sans-serif;
+    font-weight: 100;
+    font-size: 11px;
+    margin-bottom: 10px; }
+  footer .footer__box {
+    margin-bottom: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center; }
+    footer .footer__box .footer-box__paragraphe {
+      margin-left: 5px; }
+  footer .footer__icon {
+    font-size: 10px; }
+  footer .footer__paragraphe {
+    font-size: 12px;
+    margin-bottom: 5px;
+    font-weight: 300; }
+
+/*# sourceMappingURL=menu-1.css.map */

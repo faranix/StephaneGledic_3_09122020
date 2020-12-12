@@ -1,0 +1,45 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(50deg);
+    }
+
+    20% {
+        transform: rotate(100deg);
+    }
+
+    30% {
+        transform: rotate(140deg);
+    }
+
+    40% {
+        transform: rotate(170deg);
+    }
+
+    50% {
+        transform: rotate(200deg);
+    }
+
+    60% {
+        transform: rotate(240deg);
+    }
+
+    70% {
+        transform: rotate(270deg);
+    }
+
+    80% {
+        transform: rotate(300deg);
+    }
+
+    90% {
+        transform: rotate(330deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
