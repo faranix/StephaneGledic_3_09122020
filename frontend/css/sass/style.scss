@@ -20,6 +20,10 @@ a {
     text-decoration: none;
     color: currentColor;
 }
+
+.container {
+    animation: pageAnimation 800ms;
+}
         
              
         // HEADER 
@@ -150,7 +154,7 @@ header {
  .restaurant {
     background-color: $color-grey;
     @include padding-width;
-    height: 1200px;
+    height: 1150px;
 
     &__titre {
         @include font-family-secondary;
@@ -162,11 +166,11 @@ header {
     &__box {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        padding: 0 10px;
+        justify-content: space-around;
 
         &__article {
-            margin-bottom: 10px;
+            margin: 10px;
+            max-height: 250px;
 
             &__nouveau {
                 @include font-family-secondary;
@@ -184,7 +188,7 @@ header {
             &__litlebox {
                 @include font-family-secondary;
                 background-color: #ffffff;
-                height: 75px;
+                height: 50px;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
                 display: flex;
@@ -209,21 +213,26 @@ header {
                 .heart {
                     color: $color-primary;
                     position: relative;
-                    left: 25px;
+                    left: 17px;
                     cursor: pointer;
                     opacity: 0;
 
-                    &:active{
+                    &:hover{
                         opacity: 1;
                     }
                 }
-
             }
+        }
+
+        .restaurant__box__article__topmargin {
+            margin-top: -10px;
         }
 
         .restaurant__box__img {
             @include restaurant-img__setting;
+            image-resolution: auto;
         }
+
     }
 }
 
