@@ -263,5 +263,60 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; } }
+@media screen and (min-width: 1024px) {
+  .fonctionnement__box {
+    justify-content: space-around; }
+    .fonctionnement__box__article__circle {
+      left: -13%; }
+
+  .restaurant {
+    height: 850px; }
+    .restaurant .restaurant__box__article {
+      margin-bottom: 130px; }
+      .restaurant .restaurant__box__article__nouveau {
+        padding: 10px 20px;
+        font-size: 15px;
+        top: 60px; }
+      .restaurant .restaurant__box__article__litlebox {
+        height: 80px;
+        font-size: 18px; }
+        .restaurant .restaurant__box__article__litlebox .heart {
+          left: 56%; }
+      .restaurant .restaurant__box__article:hover {
+        opacity: 0.8;
+        transition: opacity 300ms; }
+    .restaurant .restaurant__box__img {
+      min-height: 100%; }
+
+  footer {
+    height: 170px; }
+    footer .footer__titre {
+      font-size: 20px !important; }
+    footer .footer__box {
+      font-size: 18px !important; }
+    footer .footer__paragraphe {
+      font-size: 18px !important;
+      margin-left: 1%; } }
+@media screen and (min-width: 1440px) {
+  .information__titre {
+    font-size: 30px; }
+
+  .information__paragraphe {
+    font-size: 20px; }
+
+  .information__button {
+    font-size: 20px; }
+
+  .fonctionnement__title {
+    font-size: 30px; }
+
+  .fonctionnement__box__article__paragraphe {
+    font-size: 20px; }
+
+  .restaurant__titre {
+    font-size: 30px; }
+
+  .restaurant__box__article__nouveau {
+    left: 75%; } }
 
 /*# sourceMappingURL=style.css.map */
