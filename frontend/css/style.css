@@ -91,13 +91,14 @@ header {
     margin-bottom: 0px; }
 
 .fonctionnement {
-  padding: 0 10px; }
-  .fonctionnement .fonctionnement__title {
+  padding: 0 10px;
+  height: 330px; }
+  .fonctionnement__title {
     font-family: "Roboto", sans-serif;
     margin-top: 40px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding-left: 20px; }
-  .fonctionnement .fonctionnement__box {
+  .fonctionnement__box__article {
     font-family: "Roboto", sans-serif;
     display: flex;
     margin: 20px 20px;
@@ -105,7 +106,7 @@ header {
     background-color: #f6f6f6;
     border-radius: 20px;
     box-shadow: 10px 10px 20px -20px; }
-    .fonctionnement .fonctionnement__box__circle {
+    .fonctionnement__box__article__circle {
       position: absolute;
       left: 6%;
       color: #ffffff;
@@ -113,14 +114,14 @@ header {
       padding: 4px 8px;
       font-size: 0.8rem;
       border-radius: 100%; }
-    .fonctionnement .fonctionnement__box__icon {
+    .fonctionnement__box__article__icon {
       margin-left: 10px;
       color: #7e7e7e; }
-      .fonctionnement .fonctionnement__box__icon .fa-store {
+      .fonctionnement__box__article__icon .fa-store {
         font-size: 14px;
         margin-left: -4px;
         color: #9356DC; }
-    .fonctionnement .fonctionnement__box__paragraphe {
+    .fonctionnement__box__article__paragraphe {
       margin-top: 4px;
       padding: 0px 20px;
       font-weight: 500;
@@ -136,14 +137,15 @@ header {
     font-family: "Roboto", sans-serif;
     padding-top: 40px;
     padding-left: 20px;
-    margin-bottom: 15px; }
+    margin-bottom: -10px; }
   .restaurant__box {
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
     .restaurant__box__article {
       margin: 10px;
-      max-height: 250px; }
+      max-height: 250px;
+      box-shadow: 5px 5px 20px -20px; }
       .restaurant__box__article__nouveau {
         font-family: "Roboto", sans-serif;
         position: relative;
@@ -219,5 +221,102 @@ footer {
     font-size: 12px;
     margin-bottom: 5px;
     font-weight: 300; }
+
+@media screen and (min-width: 375px) {
+  .fonctionnement__box__circle {
+    left: 5% !important; }
+
+  .restaurant__box__article__nouveau {
+    left: 70%; } }
+@media screen and (min-width: 768px) {
+  .logo {
+    max-height: 40px; }
+
+  .fonctionnement {
+    height: 200px; }
+    .fonctionnement__box {
+      display: flex;
+      height: 120px; }
+      .fonctionnement__box__article {
+        align-items: center; }
+        .fonctionnement__box__article__icon {
+          margin-left: 0px; }
+        .fonctionnement__box__article__circle {
+          position: relative;
+          left: -18%; }
+
+  .restaurant {
+    height: 650px; }
+    .restaurant__titre {
+      margin-bottom: 10px; }
+    .restaurant__box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .restaurant__box__article {
+        min-width: 40%;
+        max-height: 250px; }
+      .restaurant__box .restaurant__box__article__topmargin {
+        margin-top: 10px; }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+@media screen and (min-width: 1024px) {
+  .fonctionnement__box {
+    justify-content: space-around; }
+    .fonctionnement__box__article__circle {
+      left: -13%; }
+
+  .restaurant {
+    height: 850px; }
+    .restaurant .restaurant__box__article {
+      margin-bottom: 130px; }
+      .restaurant .restaurant__box__article__nouveau {
+        padding: 10px 20px;
+        font-size: 15px;
+        top: 60px; }
+      .restaurant .restaurant__box__article__litlebox {
+        height: 80px;
+        font-size: 18px; }
+        .restaurant .restaurant__box__article__litlebox .heart {
+          left: 56%; }
+      .restaurant .restaurant__box__article:hover {
+        opacity: 0.8;
+        transition: opacity 300ms; }
+    .restaurant .restaurant__box__img {
+      min-height: 100%; }
+
+  footer {
+    height: 170px; }
+    footer .footer__titre {
+      font-size: 20px !important; }
+    footer .footer__box {
+      font-size: 18px !important; }
+    footer .footer__paragraphe {
+      font-size: 18px !important;
+      margin-left: 1%; } }
+@media screen and (min-width: 1440px) {
+  .information__titre {
+    font-size: 30px; }
+
+  .information__paragraphe {
+    font-size: 20px; }
+
+  .information__button {
+    font-size: 20px; }
+
+  .fonctionnement__title {
+    font-size: 30px; }
+
+  .fonctionnement__box__article__paragraphe {
+    font-size: 20px; }
+
+  .restaurant__titre {
+    font-size: 30px; }
+
+  .restaurant__box__article__nouveau {
+    left: 75%; } }
 
 /*# sourceMappingURL=style.css.map */
