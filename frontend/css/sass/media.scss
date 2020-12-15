@@ -1,0 +1,70 @@
+// ==========  Media Query =============
+
+@media screen and (min-width: 375px) {
+    .fonctionnement__box__circle {
+        left: 5% !important;
+    }
+
+    .restaurant__box__article__nouveau {
+        left: 70%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        max-height: 40px;
+    }
+
+    .fonctionnement {
+        height: 200px;
+
+        &__box {
+            display: flex;
+            height: 120px;
+    
+            &__article {
+                align-items: center;
+
+                &__icon {
+                    margin-left: 0px;
+                }
+    
+                &__circle {
+                    position: relative;
+                    left: -18%;
+                }
+            }
+        }
+    }
+
+    .restaurant {
+        height: 650px;
+
+        &__titre {
+            margin-bottom: 10px;
+        }
+
+        &__box {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            &__article {
+                min-width: 40%;
+                max-height: 250px;
+            }
+
+            .restaurant__box__article__topmargin {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

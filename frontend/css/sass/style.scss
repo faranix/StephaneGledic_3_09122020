@@ -97,48 +97,52 @@ header {
 
 .fonctionnement {
     @include padding-width;
-    .fonctionnement__title {
+    height: 330px;
+    &__title {
         @include font-family-secondary;
         margin-top: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         padding-left: 20px;
     }
 
-    .fonctionnement__box {
-        @include font-family-secondary;
-        display: flex;
-        margin: 20px 20px;
-        padding: 20px;
-        background-color: $color-grey;
-        border-radius: 20px;
-        box-shadow: 10px 10px 20px -20px;
+    &__box {
 
-        &__circle {
-            position: absolute;
-            left: 6%;
-            color: #ffffff;
-            background-color: $color-primary;
-            padding: 4px 8px;
-            font-size: 0.8rem;
-            border-radius: 100%;
-        }
-
-        &__icon {
-            margin-left: 10px;
-            color: $color-icons;
-
-            .fa-store {
-                font-size: 14px;
-                margin-left: -4px;
-                color: $color-primary;
+        &__article {
+            @include font-family-secondary;
+            display: flex;
+            margin: 20px 20px;
+            padding: 20px;
+            background-color: $color-grey;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px -20px;
+    
+            &__circle {
+                position: absolute;
+                left: 6%;
+                color: #ffffff;
+                background-color: $color-primary;
+                padding: 4px 8px;
+                font-size: 0.8rem;
+                border-radius: 100%;
             }
-        }
-
-        &__paragraphe {
-            margin-top: 4px;
-            padding: 0px 20px;
-            font-weight: 500;
-            font-size: 0.9rem;
+    
+            &__icon {
+                margin-left: 10px;
+                color: $color-icons;
+    
+                .fa-store {
+                    font-size: 14px;
+                    margin-left: -4px;
+                    color: $color-primary;
+                }
+            }
+    
+            &__paragraphe {
+                margin-top: 4px;
+                padding: 0px 20px;
+                font-weight: 500;
+                font-size: 0.9rem;
+            }
         }
     }
 
@@ -160,7 +164,7 @@ header {
         @include font-family-secondary;
         padding-top: 40px;
         padding-left: 20px;
-        margin-bottom: 15px;
+        margin-bottom: -10px;
     }
 
     &__box {
@@ -171,6 +175,7 @@ header {
         &__article {
             margin: 10px;
             max-height: 250px;
+            box-shadow: 5px 5px 20px -20px;
 
             &__nouveau {
                 @include font-family-secondary;
@@ -232,7 +237,6 @@ header {
             @include restaurant-img__setting;
             image-resolution: auto;
         }
-
     }
 }
 
@@ -276,3 +280,5 @@ footer {
         font-weight: 300;
     }
 }
+
+@import "media.scss";
