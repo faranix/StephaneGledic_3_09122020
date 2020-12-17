@@ -52,6 +52,10 @@ header {
     font-weight: 100;
     max-width: 50%; }
 
+.images__bug {
+  width: 100%;
+  height: 210px; }
+
 main {
   background-color: #f6f6f6; }
 
@@ -88,7 +92,8 @@ main {
       cursor: pointer;
       opacity: 0; }
       .presentation__boxtitre__heart .heart:active {
-        opacity: 1; }
+        opacity: 1;
+        transition: opacity 400ms; }
 
 .menu {
   margin-top: 25px;
@@ -145,13 +150,13 @@ main {
       border-bottom-right-radius: 10px; }
       .menu__article__overlay .fa-check-circle {
         font-size: 20px; }
-    .menu__article__container:hover + .menu__article__overlay {
+    .menu__article__container:active + .menu__article__overlay {
       left: 80%;
       width: 20%;
       transition: 800ms; }
-      .menu__article__container:hover + .menu__article__overlay .fa-check-circle {
+      .menu__article__container:active + .menu__article__overlay .fa-check-circle {
         animation: rotate 600ms; }
-    .menu__article__container:hover {
+    .menu__article__container:active {
       width: 80%;
       transition: 800ms; }
 
@@ -168,6 +173,9 @@ main {
     color: #ffffff;
     margin-bottom: 80px;
     cursor: pointer; }
+    .commande__button:hover {
+      opacity: 0.8;
+      transition: opacity 400ms; }
 
 footer {
   padding: 0 10px;
@@ -195,5 +203,139 @@ footer {
     font-size: 12px;
     margin-bottom: 5px;
     font-weight: 300; }
+
+@media screen and (min-width: 375px) {
+  .images__bug {
+    width: 100%;
+    height: 250px; } }
+@media screen and (min-width: 425px) {
+  .images__bug {
+    width: 100%;
+    height: 283px; } }
+@media screen and (min-width: 768px) {
+  .logo {
+    max-height: 40px; }
+
+  .images__bug {
+    width: 100%;
+    height: 512px; }
+
+  .header__fleche {
+    position: relative;
+    right: 170px; }
+
+  .background {
+    padding: 0 20px; }
+
+  .presentation__boxtitre__heart {
+    margin-left: 400px; }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+@media screen and (min-width: 1024px) {
+  .background {
+    bottom: 120px; }
+
+  .images__bug {
+    width: 100%;
+    height: 682px; }
+
+  .header__fleche {
+    position: relative;
+    right: 290px;
+    font-size: 20px; }
+
+  .presentation__boxtitre__titre {
+    font-size: 30px; }
+
+  .presentation__boxtitre__heart {
+    margin-left: 600px; }
+
+  .fa-heart {
+    font-size: 25px !important; }
+
+  .heart {
+    left: 28px !important; }
+    .heart:hover {
+      opacity: 1;
+      transition: opacity 400ms; }
+
+  .menu__titre {
+    font-size: 20px; }
+  .menu .menu__article__container__titre {
+    font-size: 18px; }
+  .menu .menu__article__container .menu__article__container__info__paragraphe {
+    font-size: 15px; }
+  .menu .menu__article__container .menu__article__container__info__prix {
+    font-size: 14px; }
+  .menu .menu__article__overlay {
+    min-height: 65px; }
+
+  .commande__button {
+    font-size: 20px; }
+
+  .footer__titre {
+    font-size: 20px !important; }
+
+  .footer__box {
+    font-size: 15px !important; }
+
+  .footer__paragraphe {
+    font-size: 15px !important;
+    margin-left: 20px; } }
+@media screen and (min-width: 1440px) {
+  .background {
+    bottom: 180px; }
+
+  .images__bug {
+    width: 100%;
+    height: 960px; }
+
+  .header__fleche {
+    position: relative;
+    right: 500px;
+    font-size: 20px; }
+
+  .presentation__boxtitre__titre {
+    font-size: 35px; }
+
+  .presentation__boxtitre__heart {
+    margin-left: 950px; }
+
+  .fa-heart {
+    font-size: 35px !important; }
+
+  .heart {
+    left: 38px !important; }
+
+  .menu__titre {
+    font-size: 25px; }
+  .menu .menu__article__container__titre {
+    font-size: 23px; }
+  .menu .menu__article__container .menu__article__container__info__paragraphe {
+    font-size: 20px; }
+  .menu .menu__article__container .menu__article__container__info__prix {
+    font-size: 18px; }
+  .menu .menu__article__overlay {
+    min-height: 76px; }
+
+  .commande__button {
+    font-size: 30px;
+    margin-top: -70px; }
+
+  footer {
+    min-height: 180px; }
+
+  .footer__titre {
+    font-size: 25px !important; }
+
+  .footer__box {
+    font-size: 20px !important; }
+
+  .footer__paragraphe {
+    font-size: 20px !important;
+    margin-left: 20px; } }
 
 /*# sourceMappingURL=menu-1.css.map */
