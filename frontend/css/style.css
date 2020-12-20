@@ -433,6 +433,9 @@ footer {
   .fonctionnement__box__article__paragraphe {
     font-size: 20px; }
 
+  .fonctionnement__box__article__circle {
+    left: -11%; }
+
   .restaurant__titre {
     font-size: 30px; }
 
