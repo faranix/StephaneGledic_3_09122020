@@ -91,10 +91,12 @@ header {
         margin-top: 30px;
         margin-bottom: 0px;
         cursor: pointer;
+        box-shadow: 10px 10px 20px -15px black;
         
         &:hover {
             opacity: 0.8;
-            transition: opacity 400ms;
+            box-shadow: 10px 10px 20px -10px black;
+            transition: all 400ms;
         }
     }
 }
@@ -186,10 +188,10 @@ header {
             &__nouveau {
                 @include font-family-secondary;
                 position: relative;
-                max-width: 70px;
-                padding: 8px 5px;
                 left: 75%;
                 top: 45px;
+                max-width: 70px;
+                padding: 8px 5px;
                 color: #008766;
                 background-color: #99e2d0;
                 text-align: center;
@@ -198,13 +200,13 @@ header {
 
             &__litlebox {
                 @include font-family-secondary;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 background-color: #ffffff;
                 height: 50px;
                 border-bottom-left-radius: 20px;
                 border-bottom-right-radius: 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
                 padding: 0px 20px;
                 font-size: 14px;
 
@@ -222,9 +224,9 @@ header {
                 }
 
                 .heart {
-                    color: $color-primary;
                     position: relative;
                     left: 17px;
+                    color: $color-primary;
                     cursor: pointer;
                     opacity: 0;
 
@@ -250,12 +252,12 @@ header {
 
 footer {
     @include padding-width;
+    @include font-family-secondary;
     height: 130px;
     padding-top: 20px;
     padding-left: 10px;
     background-color: #353535;
     color: #ffffff;
-    @include font-family-secondary;
 
     .footer__titre {
         @include font-family-primary;
@@ -265,10 +267,10 @@ footer {
     }
 
     .footer__box {
-        margin-bottom: 5px;
-        font-size: 12px;
         display: flex;
         align-items: center;
+        margin-bottom: 5px;
+        font-size: 12px;
 
         .footer-box__paragraphe {
             margin-left: 5px;

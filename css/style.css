@@ -200,10 +200,12 @@ header {
     color: #ffffff;
     margin-top: 30px;
     margin-bottom: 0px;
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: 10px 10px 20px -15px black; }
     .information__button:hover {
       opacity: 0.8;
-      transition: opacity 400ms; }
+      box-shadow: 10px 10px 20px -10px black;
+      transition: all 400ms; }
 
 .fonctionnement {
   padding: 0 10px;
@@ -264,23 +266,23 @@ header {
       .restaurant__box__article__nouveau {
         font-family: "Roboto", sans-serif;
         position: relative;
-        max-width: 70px;
-        padding: 8px 5px;
         left: 75%;
         top: 45px;
+        max-width: 70px;
+        padding: 8px 5px;
         color: #008766;
         background-color: #99e2d0;
         text-align: center;
         font-size: 12px; }
       .restaurant__box__article__litlebox {
         font-family: "Roboto", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: #ffffff;
         height: 50px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         padding: 0px 20px;
         font-size: 14px; }
         .restaurant__box__article__litlebox__like {
@@ -291,9 +293,9 @@ header {
         .restaurant__box__article__litlebox__paragraphe {
           font-weight: 300; }
         .restaurant__box__article__litlebox .heart {
-          color: #9356DC;
           position: relative;
           left: 17px;
+          color: #9356DC;
           cursor: pointer;
           opacity: 0; }
           .restaurant__box__article__litlebox .heart:active {
@@ -311,22 +313,22 @@ header {
 
 footer {
   padding: 0 10px;
+  font-family: "Roboto", sans-serif;
   height: 130px;
   padding-top: 20px;
   padding-left: 10px;
   background-color: #353535;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif; }
+  color: #ffffff; }
   footer .footer__titre {
     font-family: "Shrikhand", sans-serif;
     font-weight: 100;
     font-size: 11px;
     margin-bottom: 10px; }
   footer .footer__box {
-    margin-bottom: 5px;
-    font-size: 12px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 12px; }
     footer .footer__box .footer-box__paragraphe {
       margin-left: 5px; }
   footer .footer__icon {
@@ -463,5 +465,107 @@ footer {
 
   .restaurant__box__article__nouveau {
     left: 77% !important; } }
+@media screen and (min-width: 1920px) {
+  header {
+    height: 150px; }
+
+  .logo {
+    font-size: 2rem !important;
+    max-width: 80% !important;
+    max-height: 60px; }
+
+  .localisation {
+    height: 100px; }
+
+  .localisation__info {
+    font-size: 30px !important; }
+
+  .information {
+    height: 400px; }
+
+  .information__titre {
+    font-size: 45px; }
+
+  .information__paragraphe {
+    font-size: 32px; }
+
+  .information__button {
+    font-size: 30px; }
+
+  .fonctionnement {
+    height: 300px; }
+
+  .fonctionnement__title {
+    font-size: 50px; }
+
+  .fonctionnement__box__article {
+    padding: 60px; }
+
+  .fonctionnement__box__article__circle {
+    font-size: 25px;
+    padding: 15px 20px;
+    left: -18%; }
+
+  .fonctionnement__box__article__icon {
+    margin-left: 10px;
+    color: #7e7e7e; }
+    .fonctionnement__box__article__icon .fa-store {
+      font-size: 30px;
+      margin-right: 25px;
+      color: #9356DC; }
+    .fonctionnement__box__article__icon .fa-bars {
+      font-size: 30px;
+      margin-right: 25px; }
+    .fonctionnement__box__article__icon .fa-mobile-alt {
+      font-size: 30px;
+      margin-right: 25px; }
+
+  .fonctionnement__box__article__paragraphe {
+    font-size: 30px; }
+
+  .restaurant {
+    height: 1600px; }
+
+  .restaurant__titre {
+    font-size: 50px; }
+
+  .restaurant__box__article {
+    min-height: 500px;
+    margin-left: 50px;
+    margin-top: 70px; }
+
+  .restaurant__box__article__topmargin {
+    margin-top: 66px !important; }
+
+  .restaurant__box__article__litlebox {
+    min-height: 100px; }
+
+  .restaurant__box__article__litlebox__titre {
+    font-size: 35px;
+    margin-top: 40px; }
+
+  .restaurant__box__article__litlebox__paragraphe {
+    font-size: 30px;
+    margin-bottom: 40px; }
+
+  .restaurant__box__like {
+    font-size: 35px; }
+
+  .restaurant__box__article__nouveau {
+    font-size: 25px !important;
+    top: 80px !important;
+    min-width: 100px; }
+
+  footer {
+    height: 250px; }
+    footer .footer__titre {
+      font-size: 35px !important; }
+    footer .footer__box {
+      font-size: 30px !important; }
+    footer .footer__icon {
+      font-size: 30px !important; }
+    footer .footer__paragraphe {
+      font-size: 29px !important;
+      margin-left: 35px; } }
 
 /*# sourceMappingURL=style.css.map */

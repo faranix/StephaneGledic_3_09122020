@@ -141,7 +141,8 @@
     opacity: 0; } }
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none;
@@ -183,10 +184,10 @@ main {
 
 .presentation__boxtitre {
   font-family: "Shrikhand", sans-serif;
-  padding-top: 30px;
-  padding-left: 15px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  padding-top: 30px;
+  padding-left: 15px; }
   .presentation__boxtitre__titre {
     font-size: 20px;
     font-weight: 200;
@@ -197,9 +198,9 @@ main {
     .presentation__boxtitre__heart .fa-heart {
       font-size: 20px; }
     .presentation__boxtitre__heart .heart {
-      color: #9356DC;
       position: relative;
       left: 23px;
+      color: #9356DC;
       cursor: pointer;
       opacity: 0; }
       .presentation__boxtitre__heart .heart:active {
@@ -207,23 +208,29 @@ main {
         transition: opacity 400ms; }
 
 .menu {
+  font-family: "Roboto", sans-serif;
   margin-top: 25px;
-  padding: 0 15px;
-  font-family: "Roboto", sans-serif; }
+  padding: 0 15px; }
+  .menu .ligne__vert {
+    height: 3px;
+    width: 35px;
+    margin-bottom: -3px;
+    background-color: #99E2D0; }
   .menu__titre {
     margin-top: 40px;
     font-size: 14px;
     font-weight: 100;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 3px;
     color: #8d8c8c; }
   .menu__article {
-    margin-top: 15px;
     display: flex;
     position: relative;
+    margin-top: 15px;
     background-color: #fff;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 5px 5px 20px -20px;
     cursor: pointer; }
     .menu__article__container {
       width: 100%; }
@@ -269,7 +276,7 @@ main {
         animation: rotate 600ms; }
     .menu__article__container:active {
       width: 80%;
-      transition: 800ms; }
+      transition: 600ms; }
 
 #entree {
   animation: pageAnimationMenu 1500ms; }
@@ -292,29 +299,31 @@ main {
     background: linear-gradient(174deg, #FF79DA, #9356DC);
     color: #ffffff;
     margin-bottom: 80px;
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: 10px 10px 20px -15px black; }
     .commande__button:hover {
       opacity: 0.8;
-      transition: opacity 400ms; }
+      box-shadow: 10px 10px 20px -10px black;
+      transition: all 400ms; }
 
 footer {
   padding: 0 10px;
-  height: 150px;
+  font-family: "Roboto", sans-serif;
+  height: 200px;
   padding-top: 20px;
   padding-left: 10px;
   background-color: #353535;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif; }
+  color: #ffffff; }
   footer .footer__titre {
     font-family: "Shrikhand", sans-serif;
     font-weight: 100;
     font-size: 11px;
     margin-bottom: 10px; }
   footer .footer__box {
-    margin-bottom: 5px;
-    font-size: 12px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 12px; }
     footer .footer__box .footer-box__paragraphe {
       margin-left: 5px; }
   footer .footer__icon {
@@ -400,6 +409,10 @@ footer {
     .menu__article__container:hover + .menu__article__overlay .fa-check-circle {
       animation: rotate 600ms; }
 
+  .menu__article__container:hover {
+    width: 80%;
+    transition: 600ms; }
+
   .commande__button {
     font-size: 20px; }
 
@@ -464,5 +477,59 @@ footer {
   .footer__paragraphe {
     font-size: 20px !important;
     margin-left: 20px; } }
+@media screen and (min-width: 1920px) {
+  header {
+    height: 150px; }
+
+  .logo {
+    font-size: 2rem !important;
+    max-width: 80% !important;
+    max-height: 60px; }
+
+  .header__fleche {
+    left: -650px;
+    font-size: 35px; }
+
+  .images {
+    min-width: 1920px; }
+
+  .presentation__boxtitre__titre {
+    font-size: 50px; }
+
+  .presentation__boxtitre__heart {
+    margin-left: 1250px; }
+
+  .menu__titre {
+    font-size: 35px; }
+
+  .menu__article__container__titre {
+    font-size: 32px !important; }
+
+  .menu__article__container__info__paragraphe {
+    font-size: 28px !important; }
+
+  .menu__article__container__info__prix {
+    font-size: 28px !important; }
+
+  .menu__article__overlay {
+    height: 100px; }
+
+  .fa-check-circle {
+    font-size: 35px !important; }
+
+  .commande__button {
+    font-size: 35px; }
+
+  footer {
+    height: 280px; }
+    footer .footer__titre {
+      font-size: 35px !important; }
+    footer .footer__box {
+      font-size: 30px !important; }
+    footer .footer__icon {
+      font-size: 30px !important; }
+    footer .footer__paragraphe {
+      font-size: 29px !important;
+      margin-left: 35px; } }
 
 /*# sourceMappingURL=menu-1.css.map */

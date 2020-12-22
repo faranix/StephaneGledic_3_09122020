@@ -15,6 +15,7 @@ $color-grey-menu: #8d8c8c;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
        
 a {
@@ -75,10 +76,10 @@ main {
 
 .presentation__boxtitre {
     @include font-family-primary;
-    padding-top: 30px;
-    padding-left: 15px;
     display: flex;
     align-items: center;
+    padding-top: 30px;
+    padding-left: 15px;
 
     &__titre {
         font-size: 20px;
@@ -94,9 +95,9 @@ main {
         }
 
         .heart {
-            color: $color-primary;
             position: relative;
             left: 23px;
+            color: $color-primary;
             cursor: pointer;
             opacity: 0;
 
@@ -113,26 +114,34 @@ main {
         // MENU
 
 .menu {
+    @include font-family-secondary;
     margin-top: 25px;
     padding: 0 15px;
-    @include font-family-secondary;
+
+    .ligne__vert {
+        height: 3px;
+        width: 35px;
+        margin-bottom: -3px;
+        background-color: #99E2D0;
+    }
 
     &__titre {
         margin-top: 40px;
         font-size: 14px;
         font-weight: 100;
         text-transform: uppercase;
-        margin-bottom: 10px;
+        margin-bottom: 3px;
         color: $color-grey-menu;
     }
 
     &__article {
-        margin-top: 15px;
         display: flex;
         position: relative;
+        margin-top: 15px;
         background-color: #fff;
         border-radius: 10px;
         padding: 10px;
+        box-shadow: 5px 5px 20px -20px;
         cursor: pointer;
 
         &__container {
@@ -196,7 +205,7 @@ main {
 
         &__container:active {
             width: 80%;
-            transition: 800ms;
+            transition: 600ms;
         }
     }
 }
@@ -229,22 +238,24 @@ main {
         color: #ffffff;
         margin-bottom: 80px;
         cursor: pointer;
+        box-shadow: 10px 10px 20px -15px black;
 
         &:hover {
             opacity: 0.8;
-            transition: opacity 400ms;
+            box-shadow: 10px 10px 20px -10px black;
+            transition: all 400ms;
         }
     }
 }
 
 footer {
     @include padding-width;
-    height: 150px;
+    @include font-family-secondary;
+    height: 200px;
     padding-top: 20px;
     padding-left: 10px;
     background-color: #353535;
     color: #ffffff;
-    @include font-family-secondary;
 
     .footer__titre {
         @include font-family-primary;
@@ -254,10 +265,10 @@ footer {
     }
 
     .footer__box {
-        margin-bottom: 5px;
-        font-size: 12px;
         display: flex;
         align-items: center;
+        margin-bottom: 5px;
+        font-size: 12px;
 
         .footer-box__paragraphe {
             margin-left: 5px;
