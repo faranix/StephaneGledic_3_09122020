@@ -187,7 +187,7 @@ main {
         &__container:active + &__overlay {
             left: 80%;
             width: 20%;
-            transition: 800ms;
+            transition: 600ms;
             
             .fa-check-circle {
                 animation: rotate 600ms;
@@ -200,6 +200,24 @@ main {
         }
     }
 }
+
+// Animation des plats 
+
+#entree {
+    animation: pageAnimationMenu 1500ms;
+}
+
+#plat {
+    animation: pageAnimationMenu 2000ms;
+}
+
+#dessert {
+    animation: pageAnimationMenu 3000ms;
+}
+
+
+
+
 .commande {
     @include flexmid;
     &__button {

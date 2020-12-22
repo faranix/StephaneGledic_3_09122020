@@ -1,204 +1,206 @@
 // ==========  Media Query =============
 
 @media screen and (max-width: 320px) {
-    .fonctionnement__box__circle {
-        left: 6%;
-    }
+  .fonctionnement__box__article__circle {
+    left: 6% !important;
+  }
+
+  .restaurant__box__article__nouveau {
+    left: 65% !important;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    .fonctionnement__box__circle {
-        left: 5%;
-    }
+  .fonctionnement__box__article__circle {
+    left: 5%;
+  }
 
-    .restaurant__box__article__nouveau {
-        left: 70%;
-    }
+  .restaurant__box__article__nouveau {
+    left: 70%;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  // Mettre L'animation au milieu
 
-    // Mettre L'animation au milieu
+  .lds-default {
+    left: 45%;
+    top: 300px;
+    transform: scale(2.5);
+  }
+  .logo {
+    max-height: 40px;
+  }
 
-    .lds-default {
-        left: 45%;
-        top: 300px;
-        transform: scale(2.5);
-    }
-    .logo {
-        max-height: 40px;
-    }
+  .fonctionnement {
+    height: 200px;
 
-    .fonctionnement {
-        height: 200px;
+    &__box {
+      display: flex;
+      height: 120px;
 
-        &__box {
-            display: flex;
-            height: 120px;
-    
-            &__article {
-                align-items: center;
-
-                &__icon {
-                    margin-left: 0px;
-                }
-    
-                &__circle {
-                    position: relative;
-                    left: -18%;
-                }
-            }
-        }
-    }
-
-    .restaurant {
-        height: 650px;
-
-        &__titre {
-            margin-bottom: 10px;
-        }
-
-        &__box {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-
-
-            &__article {
-                min-width: 40%;
-                max-height: 250px;
-            }
-
-            .restaurant__box__article__topmargin {
-                margin-top: 10px;
-            }
-        }
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
+      &__article {
         align-items: center;
-    }
-}
 
+        &__icon {
+          margin-left: 0px;
+        }
+
+        &__circle {
+          position: relative;
+          left: -18%;
+        }
+      }
+    }
+  }
+
+  .restaurant__box__article__nouveau {
+    left: 70%;
+  }
+
+  .restaurant {
+    height: 650px;
+
+    &__titre {
+      margin-bottom: 10px;
+    }
+
+    &__box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__article {
+        min-width: 40%;
+        max-height: 250px;
+      }
+
+      .restaurant__box__article__topmargin {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media screen and (min-width: 1024px) {
+  // Mettre L'animation au milieu
 
-    // Mettre L'animation au milieu
+  .lds-default {
+    left: 48%;
+    top: 400px;
+    transform: scale(3);
+  }
 
-    .lds-default {
-        left: 48%;
-        top: 400px;
-        transform: scale(3);
+  .fonctionnement__box {
+    justify-content: space-around;
+
+    &__article {
+      &__circle {
+        left: -13%;
+      }
     }
-    
-    .fonctionnement__box {
-        justify-content: space-around;
+  }
 
-        &__article {
-            &__circle {
-                left: -13%;
-            }
+  .restaurant {
+    height: 850px;
+
+    .restaurant__box__article {
+      margin-bottom: 130px;
+
+      &__nouveau {
+        padding: 12px 20px;
+        font-size: 15px;
+        top: 60px;
+        left: 265px;
+      }
+
+      &__litlebox {
+        height: 80px;
+        font-size: 18px;
+
+        .heart {
+          left: 56%;
+
+          &:hover {
+            opacity: 1;
+            transition: opacity 400ms;
+          }
         }
-    }
+      }
 
-    .restaurant {
-        height: 850px;
-
-        .restaurant__box__article {
-            margin-bottom: 130px; 
-                 
-            &__nouveau {
-                padding: 10px 20px;
-                font-size: 15px;
-                top: 60px;
-            }
-
-            &__litlebox {
-                height: 80px;
-                font-size: 18px;
-
-                .heart {
-                    left: 56%;
-                
-                    &:hover {
-                        opacity: 1;
-                        transition: opacity 400ms;
-                    }
-                }
-            }
-
-            &:hover {
-                opacity: 0.8;
-                transition: opacity 300ms;
-            }
-        }
-    
-        .restaurant__box__img {
-            min-height: 100%;
-        }
-    
+      &:hover {
+        opacity: 0.8;
+        transition: opacity 300ms;
+      }
     }
 
-    footer {
-        height: 170px;
-
-        .footer__titre {
-            font-size: 20px !important;
-        }
-    
-        .footer__box {
-            font-size: 18px !important;
-        }
-    
-        .footer__paragraphe {
-            font-size: 18px !important;
-            margin-left: 1%;
-        }
+    .restaurant__box__img {
+      min-height: 100%;
     }
+  }
+
+  footer {
+    height: 170px;
+
+    .footer__titre {
+      font-size: 20px !important;
+    }
+
+    .footer__box {
+      font-size: 18px !important;
+    }
+
+    .footer__paragraphe {
+      font-size: 18px !important;
+      margin-left: 1%;
+    }
+  }
 }
 
-
 @media screen and (min-width: 1440px) {
+  // Mettre L'animation au milieu
 
-    // Mettre L'animation au milieu
+  .lds-default {
+    left: 47%;
+    top: 350px;
+    transform: scale(3);
+  }
 
-    .lds-default {
-        left: 47%;
-        top: 350px;
-        transform: scale(3);
-    }
+  .information__titre {
+    font-size: 30px;
+  }
 
-    .information__titre {
-        font-size: 30px;
-    }
+  .information__paragraphe {
+    font-size: 20px;
+  }
 
-    .information__paragraphe {
-        font-size: 20px;
-    }
+  .information__button {
+    font-size: 20px;
+  }
 
-    .information__button {
-        font-size: 20px;
-    }
+  .fonctionnement__title {
+    font-size: 30px;
+  }
 
-    .fonctionnement__title {
-        font-size: 30px;
-    }
+  .fonctionnement__box__article__paragraphe {
+    font-size: 20px;
+  }
 
-    .fonctionnement__box__article__paragraphe {
-        font-size: 20px;
-    }
+  .fonctionnement__box__article__circle {
+    left: -11%;
+  }
 
-    .fonctionnement__box__article__circle {
-        left: -11%;
-    }
+  .restaurant__titre {
+    font-size: 30px;
+  }
 
-    .restaurant__titre {
-        font-size: 30px;
-    }
-
-    .restaurant__box__article__nouveau {
-        left: 75%;
-    }
+  .restaurant__box__article__nouveau {
+      left: 77% !important;
+  }
 }

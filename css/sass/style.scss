@@ -124,7 +124,7 @@ header {
     
             &__circle {
                 position: absolute;
-                left: 4%;
+                left: 4.5%;
                 color: #ffffff;
                 background-color: $color-primary;
                 padding: 4px 8px;
@@ -187,9 +187,9 @@ header {
                 @include font-family-secondary;
                 position: relative;
                 max-width: 70px;
-                padding: 3px 5px;
-                left: 180px;
-                top: 35px;
+                padding: 8px 5px;
+                left: 75%;
+                top: 45px;
                 color: #008766;
                 background-color: #99e2d0;
                 text-align: center;

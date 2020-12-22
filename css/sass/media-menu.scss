@@ -105,6 +105,16 @@
         }
     }
 
+    .menu__article__container:hover + .menu__article__overlay {
+        left: 80%;
+        width: 20%;
+        transition: 600ms;
+
+        .fa-check-circle {
+            animation: rotate 600ms;
+        }
+    }
+
     .commande__button {
         font-size: 20px;
     }

@@ -28,6 +28,19 @@
     opacity: 0.5; }
   100% {
     opacity: 1; } }
+@keyframes pageAnimationMenu {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 0; }
+  60% {
+    opacity: 0.3; }
+  80% {
+    opacity: 0.6; }
+  90% {
+    opacity: 0.8; }
+  100% {
+    opacity: 1; } }
 @keyframes pageAnimationAcceuil {
   0% {
     opacity: 0; }
@@ -210,7 +223,7 @@ header {
     box-shadow: 10px 10px 20px -20px; }
     .fonctionnement__box__article__circle {
       position: absolute;
-      left: 4%;
+      left: 4.5%;
       color: #ffffff;
       background-color: #9356DC;
       padding: 4px 8px;
@@ -252,9 +265,9 @@ header {
         font-family: "Roboto", sans-serif;
         position: relative;
         max-width: 70px;
-        padding: 3px 5px;
-        left: 180px;
-        top: 35px;
+        padding: 8px 5px;
+        left: 75%;
+        top: 45px;
         color: #008766;
         background-color: #99e2d0;
         text-align: center;
@@ -324,10 +337,13 @@ footer {
     font-weight: 300; }
 
 @media screen and (max-width: 320px) {
-  .fonctionnement__box__circle {
-    left: 6%; } }
+  .fonctionnement__box__article__circle {
+    left: 6% !important; }
+
+  .restaurant__box__article__nouveau {
+    left: 65% !important; } }
 @media screen and (max-width: 375px) {
-  .fonctionnement__box__circle {
+  .fonctionnement__box__article__circle {
     left: 5%; }
 
   .restaurant__box__article__nouveau {
@@ -353,6 +369,9 @@ footer {
         .fonctionnement__box__article__circle {
           position: relative;
           left: -18%; }
+
+  .restaurant__box__article__nouveau {
+    left: 70%; }
 
   .restaurant {
     height: 650px; }
@@ -388,9 +407,10 @@ footer {
     .restaurant .restaurant__box__article {
       margin-bottom: 130px; }
       .restaurant .restaurant__box__article__nouveau {
-        padding: 10px 20px;
+        padding: 12px 20px;
         font-size: 15px;
-        top: 60px; }
+        top: 60px;
+        left: 265px; }
       .restaurant .restaurant__box__article__litlebox {
         height: 80px;
         font-size: 18px; }
@@ -442,6 +462,6 @@ footer {
     font-size: 30px; }
 
   .restaurant__box__article__nouveau {
-    left: 75%; } }
+    left: 77% !important; } }
 
 /*# sourceMappingURL=style.css.map */
