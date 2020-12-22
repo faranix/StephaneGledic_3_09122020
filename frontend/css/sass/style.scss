@@ -124,7 +124,7 @@ header {
     
             &__circle {
                 position: absolute;
-                left: 6%;
+                left: 4%;
                 color: #ffffff;
                 background-color: $color-primary;
                 padding: 4px 8px;
@@ -241,7 +241,6 @@ header {
 
         .restaurant__box__img {
             @include restaurant-img__setting;
-            image-resolution: auto;
         }
     }
 }

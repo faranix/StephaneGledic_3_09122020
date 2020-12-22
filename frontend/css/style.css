@@ -210,7 +210,7 @@ header {
     box-shadow: 10px 10px 20px -20px; }
     .fonctionnement__box__article__circle {
       position: absolute;
-      left: 6%;
+      left: 4%;
       color: #ffffff;
       background-color: #9356DC;
       padding: 4px 8px;
@@ -294,8 +294,7 @@ header {
       height: 180px;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-      margin-bottom: -3px;
-      image-resolution: auto; }
+      margin-bottom: -3px; }
 
 footer {
   padding: 0 10px;
@@ -324,9 +323,12 @@ footer {
     margin-bottom: 5px;
     font-weight: 300; }
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 320px) {
   .fonctionnement__box__circle {
-    left: 5% !important; }
+    left: 6%; } }
+@media screen and (max-width: 375px) {
+  .fonctionnement__box__circle {
+    left: 5%; }
 
   .restaurant__box__article__nouveau {
     left: 70%; } }
