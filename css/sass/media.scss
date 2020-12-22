@@ -1,204 +1,350 @@
 // ==========  Media Query =============
 
 @media screen and (max-width: 320px) {
-    .fonctionnement__box__circle {
-        left: 6%;
-    }
+  .fonctionnement__box__article__circle {
+    left: 6% !important;
+  }
+
+  .restaurant__box__article__nouveau {
+    left: 65% !important;
+  }
 }
 
 @media screen and (max-width: 375px) {
-    .fonctionnement__box__circle {
-        left: 5%;
-    }
+  .fonctionnement__box__article__circle {
+    left: 5%;
+  }
 
-    .restaurant__box__article__nouveau {
-        left: 70%;
-    }
+  .restaurant__box__article__nouveau {
+    left: 70%;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  // Mettre L'animation au milieu
 
-    // Mettre L'animation au milieu
+  .lds-default {
+    left: 45%;
+    top: 300px;
+    transform: scale(2.5);
+  }
+  .logo {
+    max-height: 40px;
+  }
 
-    .lds-default {
-        left: 45%;
-        top: 300px;
-        transform: scale(2.5);
-    }
-    .logo {
-        max-height: 40px;
-    }
+  .fonctionnement {
+    height: 200px;
 
-    .fonctionnement {
-        height: 200px;
+    &__box {
+      display: flex;
+      height: 120px;
 
-        &__box {
-            display: flex;
-            height: 120px;
-    
-            &__article {
-                align-items: center;
-
-                &__icon {
-                    margin-left: 0px;
-                }
-    
-                &__circle {
-                    position: relative;
-                    left: -18%;
-                }
-            }
-        }
-    }
-
-    .restaurant {
-        height: 650px;
-
-        &__titre {
-            margin-bottom: 10px;
-        }
-
-        &__box {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-
-
-            &__article {
-                min-width: 40%;
-                max-height: 250px;
-            }
-
-            .restaurant__box__article__topmargin {
-                margin-top: 10px;
-            }
-        }
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
+      &__article {
         align-items: center;
-    }
-}
 
+        &__icon {
+          margin-left: 0px;
+        }
+
+        &__circle {
+          position: relative;
+          left: -18%;
+        }
+      }
+    }
+  }
+
+  .restaurant__box__article__nouveau {
+    left: 70%;
+  }
+
+  .restaurant {
+    height: 650px;
+
+    &__titre {
+      margin-bottom: 10px;
+    }
+
+    &__box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      &__article {
+        min-width: 40%;
+        max-height: 250px;
+      }
+
+      .restaurant__box__article__topmargin {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media screen and (min-width: 1024px) {
+  // Mettre L'animation au milieu
 
-    // Mettre L'animation au milieu
+  .lds-default {
+    left: 48%;
+    top: 400px;
+    transform: scale(3);
+  }
 
-    .lds-default {
-        left: 48%;
-        top: 400px;
-        transform: scale(3);
+  .fonctionnement__box {
+    justify-content: space-around;
+
+    &__article {
+      &__circle {
+        left: -13%;
+      }
     }
-    
-    .fonctionnement__box {
-        justify-content: space-around;
+  }
 
-        &__article {
-            &__circle {
-                left: -13%;
-            }
+  .restaurant {
+    height: 850px;
+
+    .restaurant__box__article {
+      margin-bottom: 130px;
+
+      &__nouveau {
+        padding: 12px 20px;
+        font-size: 15px;
+        top: 60px;
+        left: 265px;
+      }
+
+      &__litlebox {
+        height: 80px;
+        font-size: 18px;
+
+        .heart {
+          left: 56%;
+
+          &:hover {
+            opacity: 1;
+            transition: opacity 400ms;
+          }
         }
-    }
+      }
 
-    .restaurant {
-        height: 850px;
-
-        .restaurant__box__article {
-            margin-bottom: 130px; 
-                 
-            &__nouveau {
-                padding: 10px 20px;
-                font-size: 15px;
-                top: 60px;
-            }
-
-            &__litlebox {
-                height: 80px;
-                font-size: 18px;
-
-                .heart {
-                    left: 56%;
-                
-                    &:hover {
-                        opacity: 1;
-                        transition: opacity 400ms;
-                    }
-                }
-            }
-
-            &:hover {
-                opacity: 0.8;
-                transition: opacity 300ms;
-            }
-        }
-    
-        .restaurant__box__img {
-            min-height: 100%;
-        }
-    
+      &:hover {
+        opacity: 0.8;
+        transition: opacity 300ms;
+      }
     }
 
-    footer {
-        height: 170px;
-
-        .footer__titre {
-            font-size: 20px !important;
-        }
-    
-        .footer__box {
-            font-size: 18px !important;
-        }
-    
-        .footer__paragraphe {
-            font-size: 18px !important;
-            margin-left: 1%;
-        }
+    .restaurant__box__img {
+      min-height: 100%;
     }
+  }
+
+  footer {
+    height: 170px;
+
+    .footer__titre {
+      font-size: 20px !important;
+    }
+
+    .footer__box {
+      font-size: 18px !important;
+    }
+
+    .footer__paragraphe {
+      font-size: 18px !important;
+      margin-left: 1%;
+    }
+  }
 }
 
-
 @media screen and (min-width: 1440px) {
+  // Mettre L'animation au milieu
 
-    // Mettre L'animation au milieu
+  .lds-default {
+    left: 47%;
+    top: 350px;
+    transform: scale(3);
+  }
 
-    .lds-default {
-        left: 47%;
-        top: 350px;
-        transform: scale(3);
+  .information__titre {
+    font-size: 30px;
+  }
+
+  .information__paragraphe {
+    font-size: 20px;
+  }
+
+  .information__button {
+    font-size: 20px;
+  }
+
+  .fonctionnement__title {
+    font-size: 30px;
+  }
+
+  .fonctionnement__box__article__paragraphe {
+    font-size: 20px;
+  }
+
+  .fonctionnement__box__article__circle {
+    left: -11%;
+  }
+
+  .restaurant__titre {
+    font-size: 30px;
+  }
+
+  .restaurant__box__article__nouveau {
+    left: 77% !important;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  header {
+    height: 150px;
+  }
+
+  .logo {
+    font-size: 2rem !important;
+    max-width: 80% !important;
+    max-height: 60px;
+  }
+
+  .localisation {
+    height: 100px;
+  }
+
+  .localisation__info {
+    font-size: 30px !important;
+  }
+
+  .information {
+    height: 400px;
+  }
+
+  .information__titre {
+    font-size: 45px;
+  }
+
+  .information__paragraphe {
+    font-size: 32px;
+  }
+
+  .information__button {
+    font-size: 30px;
+  }
+
+  // fonctionnement
+
+  .fonctionnement {
+    height: 300px;
+  }
+
+  .fonctionnement__title {
+    font-size: 50px;
+  }
+
+  .fonctionnement__box__article {
+    padding: 60px;
+  }
+
+  .fonctionnement__box__article__circle {
+    font-size: 25px;
+    padding: 15px 20px;
+    left: -18%;
+  }
+
+  .fonctionnement__box__article__icon {
+    margin-left: 10px;
+    color: $color-icons;
+
+    .fa-store {
+      font-size: 30px;
+      margin-right: 25px;
+      color: $color-primary;
     }
 
-    .information__titre {
-        font-size: 30px;
+    .fa-bars {
+      font-size: 30px;
+      margin-right: 25px;
     }
 
-    .information__paragraphe {
-        font-size: 20px;
+    .fa-mobile-alt {
+      font-size: 30px;
+      margin-right: 25px;
+    }
+  }
+
+  .fonctionnement__box__article__paragraphe {
+    font-size: 30px;
+  }
+
+  .restaurant {
+    height: 1600px;
+  }
+
+  .restaurant__titre {
+    font-size: 50px;
+  }
+
+  .restaurant__box__article {
+    min-height: 500px;
+    margin-left: 50px;
+    margin-top: 70px;
+  }
+
+  .restaurant__box__article__topmargin {
+    margin-top: 66px !important;
+  }
+
+  .restaurant__box__article__litlebox {
+    min-height: 100px;
+  }
+
+  .restaurant__box__article__litlebox__titre {
+    font-size: 35px;
+    margin-top: 40px;
+  }
+
+  .restaurant__box__article__litlebox__paragraphe {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .restaurant__box__like {
+    font-size: 35px;
+  }
+
+  .restaurant__box__article__nouveau {
+    font-size: 25px !important;
+    top: 80px !important;
+    min-width: 100px;
+  }
+
+  footer {
+    height: 250px;
+
+    .footer__titre {
+      font-size: 35px !important;
     }
 
-    .information__button {
-        font-size: 20px;
+    .footer__box {
+      font-size: 30px !important;
     }
 
-    .fonctionnement__title {
-        font-size: 30px;
+    .footer__icon {
+      font-size: 30px !important;
     }
 
-    .fonctionnement__box__article__paragraphe {
-        font-size: 20px;
+    .footer__paragraphe {
+      font-size: 29px !important;
+      margin-left: 35px;
     }
-
-    .fonctionnement__box__article__circle {
-        left: -11%;
-    }
-
-    .restaurant__titre {
-        font-size: 30px;
-    }
-
-    .restaurant__box__article__nouveau {
-        left: 75%;
-    }
+  }
 }
