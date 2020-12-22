@@ -1,8 +1,14 @@
 // ==========  Media Query =============
 
-@media screen and (min-width: 375px) {
+@media screen and (max-width: 320px) {
     .fonctionnement__box__circle {
-        left: 5% !important;
+        left: 6%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .fonctionnement__box__circle {
+        left: 5%;
     }
 
     .restaurant__box__article__nouveau {
@@ -182,6 +188,10 @@
 
     .fonctionnement__box__article__paragraphe {
         font-size: 20px;
+    }
+
+    .fonctionnement__box__article__circle {
+        left: -11%;
     }
 
     .restaurant__titre {
