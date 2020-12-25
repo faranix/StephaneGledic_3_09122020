@@ -5,8 +5,16 @@
     left: 6% !important;
   }
 
+  .restaurant {
+    height: 1200px !important;
+  }
+
+  .restaurant__box__article {
+    margin-bottom: 20px !important;
+  }
+
   .restaurant__box__article__nouveau {
-    left: 65% !important;
+    left: 75% !important;
   }
 }
 
@@ -15,8 +23,20 @@
     left: 5%;
   }
 
+  .restaurant {
+    height: 1350px;
+  }
+
+  .restaurant__box__article {
+    margin-bottom: 50px;
+  }
+
   .restaurant__box__article__nouveau {
-    left: 70%;
+    left: 80%;
+  }
+
+  .restaurant__box__img {
+    width: 100%;
   }
 }
 
@@ -53,13 +73,11 @@
       }
     }
   }
-
   .restaurant__box__article__nouveau {
-    left: 70%;
+    left: 85%;
   }
-
   .restaurant {
-    height: 650px;
+    height: 1500px;
 
     &__titre {
       margin-bottom: 10px;
@@ -71,8 +89,8 @@
       justify-content: center;
 
       &__article {
-        min-width: 40%;
-        max-height: 250px;
+        min-width: 100%;
+        min-height: 250px;
       }
 
       .restaurant__box__article__topmargin {
@@ -110,14 +128,40 @@
   .restaurant {
     height: 850px;
 
+    .restaurant__box {
+      display: grid;
+      grid-template-columns: 1fr 20px 1fr 20px;
+      grid-template-rows: repeat(2, 350px);
+
+      .restaurant__box__article:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+      }
+
+      .restaurant__box__article:nth-child(2) {
+        grid-row: 1;
+        grid-column: 3;
+      }
+
+      .restaurant__box__article:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1;
+      }
+
+      .restaurant__box__article:nth-child(4) {
+        grid-row: 2;
+        grid-column: 3;
+      }
+    }
+
     .restaurant__box__article {
       margin-bottom: 130px;
 
       &__nouveau {
         padding: 12px 20px;
         font-size: 15px;
-        top: 60px;
-        left: 265px;
+        top: 20px;
+        left: 70%;
       }
 
       &__litlebox {
@@ -196,12 +240,24 @@
     left: -11%;
   }
 
+  .restaurant {
+    height: 950px;
+  }
+
   .restaurant__titre {
     font-size: 30px;
   }
 
+  .restaurant__box {
+    grid-template-rows: repeat(2, 400px) !important;
+  }
+
+  .restaurant__box__article {
+    min-height: 300px;
+  }
+
   .restaurant__box__article__nouveau {
-    left: 77% !important;
+    left: 80% !important;
   }
 }
 
@@ -286,21 +342,20 @@
   }
 
   .restaurant {
-    height: 1600px;
+    height: 1500px;
   }
 
   .restaurant__titre {
     font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .restaurant__box {
+    grid-template-rows: repeat(2, 630px) !important;
   }
 
   .restaurant__box__article {
     min-height: 500px;
-    margin-left: 50px;
-    margin-top: 70px;
-  }
-
-  .restaurant__box__article__topmargin {
-    margin-top: 66px !important;
   }
 
   .restaurant__box__article__litlebox {
@@ -322,9 +377,11 @@
   }
 
   .restaurant__box__article__nouveau {
-    font-size: 25px !important;
-    top: 80px !important;
+    font-size: 30px !important;
+    padding: 20px 35px !important;
+    top: 30px !important;
     min-width: 100px;
+    text-align: center;
   }
 
   footer {
