@@ -63,7 +63,7 @@
   position: absolute;
   width: 6px;
   height: 6px;
-  background: linear-gradient(100deg, #FF79DA, #9356DC);
+  background: linear-gradient(100deg, #ff79da, #9356dc);
   border-radius: 50%;
   animation: lds-default 1.2s linear infinite; }
 
@@ -128,7 +128,10 @@
   left: 62px; }
 
 @keyframes lds-default {
-  0%, 20%, 80%, 100% {
+  0%,
+  20%,
+  80%,
+  100% {
     transform: scale(1); }
   50% {
     transform: scale(1.5); } }
@@ -200,7 +203,7 @@ main {
     .presentation__boxtitre__heart .heart {
       position: relative;
       left: 23px;
-      color: #9356DC;
+      color: #9356dc;
       cursor: pointer;
       opacity: 0; }
       .presentation__boxtitre__heart .heart:active {
@@ -215,7 +218,7 @@ main {
     height: 3px;
     width: 35px;
     margin-bottom: -3px;
-    background-color: #99E2D0; }
+    background-color: #99e2d0; }
   .menu__titre {
     margin-top: 40px;
     font-size: 14px;
@@ -260,10 +263,10 @@ main {
       position: absolute;
       bottom: 0px;
       left: 100%;
-      background-color: #99E2D0;
+      background-color: #99e2d0;
       color: #fff;
       width: 0%;
-      min-height: 57px;
+      height: 100%;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px; }
       .menu__article__overlay .fa-check-circle {
@@ -296,7 +299,7 @@ main {
     padding: 14px 20px;
     border-radius: 9999px;
     border: none;
-    background: linear-gradient(174deg, #FF79DA, #9356DC);
+    background: linear-gradient(174deg, #ff79da, #9356dc);
     color: #ffffff;
     margin-bottom: 80px;
     cursor: pointer;
@@ -510,9 +513,6 @@ footer {
 
   .menu__article__container__info__prix {
     font-size: 28px !important; }
-
-  .menu__article__overlay {
-    height: 100px; }
 
   .fa-check-circle {
     font-size: 35px !important; }

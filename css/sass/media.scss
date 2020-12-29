@@ -99,6 +99,10 @@
     }
   }
 
+  .restaurant__box__img {
+    height: 15rem;
+  }
+
   footer {
     display: flex;
     flex-direction: column;
@@ -155,7 +159,6 @@
     }
 
     .restaurant__box__article {
-      margin-bottom: 130px;
 
       &__nouveau {
         padding: 12px 20px;
@@ -184,9 +187,7 @@
       }
     }
 
-    .restaurant__box__img {
-      min-height: 100%;
-    }
+    
   }
 
   footer {
@@ -254,6 +255,10 @@
 
   .restaurant__box__article {
     min-height: 300px;
+  }
+
+  .restaurant__box__img {
+    height: 18rem;
   }
 
   .restaurant__box__article__nouveau {
@@ -359,7 +364,7 @@
   }
 
   .restaurant__box__article__litlebox {
-    min-height: 100px;
+    min-height: 30%;
   }
 
   .restaurant__box__article__litlebox__titre {
@@ -382,6 +387,10 @@
     top: 30px !important;
     min-width: 100px;
     text-align: center;
+  }
+
+  .restaurant__box__img {
+    height: 25rem;
   }
 
   footer {
