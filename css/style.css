@@ -273,15 +273,21 @@ header {
       box-shadow: 5px 5px 20px -20px; }
       .restaurant__box__article__nouveau {
         font-family: "Roboto", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        left: 80%;
+        left: 75%;
         top: 20px;
         max-width: 70px;
         padding: 8px 5px;
         color: #008766;
         background-color: #99e2d0;
-        text-align: center;
-        font-size: 12px; }
+        height: 13px;
+        width: 65px;
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 2px; }
       .restaurant__box__article__litlebox {
         font-family: "Roboto", sans-serif;
         display: flex;
@@ -302,12 +308,14 @@ header {
           font-weight: 300; }
         .restaurant__box__article__litlebox .heart {
           position: relative;
-          left: 17px;
+          left: 27px;
           color: #9356dc;
           cursor: pointer;
           opacity: 0; }
           .restaurant__box__article__litlebox .heart:active {
             opacity: 1; }
+        .restaurant__box__article__litlebox .heart-font-size {
+          font-size: 1.5rem; }
     .restaurant__box .restaurant__box__article__topbox {
       position: relative;
       max-height: 100%; }
@@ -359,7 +367,7 @@ footer {
     margin-bottom: 20px !important; }
 
   .restaurant__box__article__nouveau {
-    left: 75% !important; } }
+    left: 70% !important; } }
 @media screen and (max-width: 375px) {
   .fonctionnement__box__article__circle {
     left: 5%; }
@@ -371,7 +379,7 @@ footer {
     margin-bottom: 50px; }
 
   .restaurant__box__article__nouveau {
-    left: 80%; }
+    left: 75%; }
 
   .restaurant__box__img {
     width: 100%; } }
@@ -398,10 +406,13 @@ footer {
           left: -18%; }
 
   .restaurant__box__article__nouveau {
-    left: 85%; }
+    left: 85%;
+    height: 20px;
+    width: 80px;
+    font-size: 16px; }
 
   .restaurant {
-    height: 1500px; }
+    height: 1750px; }
     .restaurant__titre {
       margin-bottom: 10px; }
     .restaurant__box {
@@ -410,12 +421,16 @@ footer {
       justify-content: center; }
       .restaurant__box__article {
         min-width: 100%;
-        min-height: 250px; }
+        min-height: 300px;
+        margin-bottom: 100px; }
+        .restaurant__box__article__litlebox {
+          height: 90px;
+          font-size: 1rem; }
       .restaurant__box .restaurant__box__article__topmargin {
         margin-top: 10px; }
 
   .restaurant__box__img {
-    height: 15rem; }
+    height: 18rem; }
 
   footer {
     display: flex;
@@ -433,11 +448,11 @@ footer {
       left: -13%; }
 
   .restaurant {
-    height: 850px; }
+    height: 900px; }
     .restaurant .restaurant__box {
       display: grid;
       grid-template-columns: 1fr 20px 1fr 20px;
-      grid-template-rows: repeat(2, 350px); }
+      grid-template-rows: repeat(2, 390px); }
       .restaurant .restaurant__box .restaurant__box__article:nth-child(1) {
         grid-row: 1;
         grid-column: 1; }
@@ -450,22 +465,24 @@ footer {
       .restaurant .restaurant__box .restaurant__box__article:nth-child(4) {
         grid-row: 2;
         grid-column: 3; }
-    .restaurant .restaurant__box__article__nouveau {
-      padding: 12px 20px;
-      font-size: 15px;
-      top: 20px;
-      left: 70%; }
-    .restaurant .restaurant__box__article__litlebox {
-      height: 80px;
-      font-size: 18px; }
-      .restaurant .restaurant__box__article__litlebox .heart {
-        left: 56%; }
-        .restaurant .restaurant__box__article__litlebox .heart:hover {
-          opacity: 1;
-          transition: opacity 400ms; }
-    .restaurant .restaurant__box__article:hover {
-      opacity: 0.8;
-      transition: opacity 300ms; }
+    .restaurant .restaurant__box__article {
+      margin-bottom: 300px; }
+      .restaurant .restaurant__box__article__nouveau {
+        padding: 12px 20px;
+        font-size: 18px;
+        top: 20px;
+        left: 75%; }
+      .restaurant .restaurant__box__article__litlebox {
+        height: 80px;
+        font-size: 18px; }
+        .restaurant .restaurant__box__article__litlebox .heart {
+          left: 56%; }
+          .restaurant .restaurant__box__article__litlebox .heart:hover {
+            opacity: 1;
+            transition: opacity 400ms; }
+      .restaurant .restaurant__box__article:hover {
+        opacity: 0.8;
+        transition: opacity 300ms; }
 
   footer {
     height: 170px; }
