@@ -184,15 +184,21 @@ header {
 
       &__nouveau {
         @include font-family-secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
-        left: 80%;
+        left: 75%;
         top: 20px;
         max-width: 70px;
         padding: 8px 5px;
         color: #008766;
         background-color: #99e2d0;
-        text-align: center;
-        font-size: 12px;
+        height: 13px;
+        width: 65px;
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 2px;
       }
 
       &__litlebox {
@@ -222,7 +228,7 @@ header {
 
         .heart {
           position: relative;
-          left: 17px;
+          left: 27px;
           color: $color-primary;
           cursor: pointer;
           opacity: 0;
@@ -230,6 +236,10 @@ header {
           &:active {
             opacity: 1;
           }
+        }
+
+        .heart-font-size {
+            font-size: 1.5rem;
         }
       }
     }

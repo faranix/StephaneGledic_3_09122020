@@ -192,7 +192,7 @@ main {
   padding-top: 30px;
   padding-left: 15px; }
   .presentation__boxtitre__titre {
-    font-size: 20px;
+    font-size: 23px;
     font-weight: 200;
     white-space: nowrap;
     flex: 3; }
@@ -253,6 +253,7 @@ main {
           margin-right: 5px; }
         .menu__article__container__info__prix {
           font-size: 12px;
+          font-weight: bold;
           margin-right: 5px;
           font-weight: bold; }
     .menu__article__overlay {
@@ -297,7 +298,7 @@ main {
   align-items: center; }
   .commande__button {
     font-size: 14px;
-    padding: 14px 20px;
+    padding: 14px 45px;
     border-radius: 9999px;
     border: none;
     background: linear-gradient(174deg, #ff79da, #9356dc);
@@ -313,9 +314,9 @@ main {
 footer {
   padding: 0 10px;
   font-family: "Roboto", sans-serif;
-  height: 200px;
+  height: 150px;
   padding-top: 20px;
-  padding-left: 10px;
+  padding-left: 20px;
   background-color: #353535;
   color: #ffffff; }
   footer .footer__titre {
@@ -403,8 +404,6 @@ footer {
     font-size: 15px; }
   .menu .menu__article__container .menu__article__container__info__prix {
     font-size: 14px; }
-  .menu .menu__article__overlay {
-    min-height: 65px; }
 
   .menu__article__container:hover + .menu__article__overlay {
     left: 80%;
@@ -462,8 +461,6 @@ footer {
     font-size: 20px; }
   .menu .menu__article__container .menu__article__container__info__prix {
     font-size: 18px; }
-  .menu .menu__article__overlay {
-    min-height: 76px; }
 
   .commande__button {
     font-size: 30px;

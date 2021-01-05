@@ -1,3 +1,12 @@
+// Variable
+
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiaire: #99e2d0;
+$color-grey: #f6f6f6;
+$color-icons: #7e7e7e;
+
+
 // ==========  Media Query =============
 
 @media screen and (max-width: 320px) {
@@ -14,7 +23,7 @@
   }
 
   .restaurant__box__article__nouveau {
-    left: 75% !important;
+    left: 70% !important;
   }
 }
 
@@ -32,7 +41,7 @@
   }
 
   .restaurant__box__article__nouveau {
-    left: 80%;
+    left: 75%;
   }
 
   .restaurant__box__img {
@@ -75,9 +84,14 @@
   }
   .restaurant__box__article__nouveau {
     left: 85%;
+    height: 20px;
+    width: 80px;
+    font-size: 16px;
   }
   .restaurant {
-    height: 1500px;
+    height: 1750px;
+
+    
 
     &__titre {
       margin-bottom: 10px;
@@ -90,7 +104,13 @@
 
       &__article {
         min-width: 100%;
-        min-height: 250px;
+        min-height: 300px;
+        margin-bottom: 100px;
+
+        &__litlebox {
+            height: 90px;
+            font-size: 1rem;
+        }
       }
 
       .restaurant__box__article__topmargin {
@@ -100,7 +120,7 @@
   }
 
   .restaurant__box__img {
-    height: 15rem;
+    height: 18rem;
   }
 
   footer {
@@ -130,12 +150,12 @@
   }
 
   .restaurant {
-    height: 850px;
+    height: 900px;
 
     .restaurant__box {
       display: grid;
       grid-template-columns: 1fr 20px 1fr 20px;
-      grid-template-rows: repeat(2, 350px);
+      grid-template-rows: repeat(2, 390px);
 
       .restaurant__box__article:nth-child(1) {
         grid-row: 1;
@@ -159,12 +179,13 @@
     }
 
     .restaurant__box__article {
+        margin-bottom: 300px;
 
       &__nouveau {
         padding: 12px 20px;
-        font-size: 15px;
+        font-size: 18px;
         top: 20px;
-        left: 70%;
+        left: 75%;
       }
 
       &__litlebox {
