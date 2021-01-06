@@ -1,4 +1,4 @@
-// Variable
+// ==========  Variable  ============= //
 
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
@@ -6,8 +6,8 @@ $color-tertiaire: #99e2d0;
 $color-grey: #f6f6f6;
 $color-icons: #7e7e7e;
 
-// ALL
-@import "mixin.scss", "animation.scss";
+// ==========  ALL  ============= //
+@import "mixin.scss", "animation.scss";   // Importer les animations et les mixins
 
 * {
   margin: 0;
@@ -20,17 +20,17 @@ a {
 }
 
 .container {
-  animation: pageAnimationAcceuil 4s;
+  animation: pageAnimationAcceuil 4s;   // Annimation Opacité au chargement d'entrée sur la page
 }
 
 body {
   max-width: 100vw;
 }
 
-// HEADER
+// ==========  HEADER  ============= //
 
 header {
-  @include flexmid;
+  @include flexmid;     // Flexmid permet de center un element au centre avec les flexbox
   height: 55px;
 
   .logo {
@@ -41,13 +41,13 @@ header {
   }
 }
 
-// TOP MAIN
+// ==========  TOP MAIN  ============= //
 
 .localisation {
   @include flexmid;
   height: 50px;
   background: #eaeaea;
-  box-shadow: inset 0em 3px 10px -8px;
+  box-shadow: inset 0em 3px 10px -8px;  // inset permet de crée une ombre a l'interieur de la box
 
   .localisation__info {
     @include font-family-secondary;
@@ -99,7 +99,7 @@ header {
   }
 }
 
-// FONCTIONNEMENT
+// ==========  FONCTIONNEMENT  ============= //
 
 .fonctionnement {
   @include padding-width;
@@ -156,7 +156,7 @@ header {
   }
 }
 
-// Restaurants
+// ==========  RESTAURANTS  ============= //
 
 .restaurant {
   background-color: $color-grey;
@@ -172,7 +172,7 @@ header {
 
   &__box {
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   // Mettre les articles en {"column"}
     justify-content: space-around;
 
     &__article {
@@ -184,9 +184,7 @@ header {
 
       &__nouveau {
         @include font-family-secondary;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexmid;
         position: absolute;
         left: 75%;
         top: 20px;
@@ -255,7 +253,7 @@ header {
   }
 }
 
-// FOOTER
+// ==========  FOOTER  ============= //
 
 footer {
   @include padding-width;
@@ -295,4 +293,4 @@ footer {
   }
 }
 
-@import "media.scss";
+@import "media.scss";   // Import des media query 

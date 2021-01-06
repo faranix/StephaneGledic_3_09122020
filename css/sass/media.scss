@@ -1,4 +1,4 @@
-// Variable
+// ==========  Variable  ============= //
 
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
@@ -7,15 +7,20 @@ $color-grey: #f6f6f6;
 $color-icons: #7e7e7e;
 
 
-// ==========  Media Query =============
+// ==========  Media Query  ============= //
 
 @media screen and (max-width: 320px) {
+
+  // Fonctionnement 320px
+
   .fonctionnement__box__article__circle {
     left: 6% !important;
   }
 
+  // Restaurant 320px
+
   .restaurant {
-    height: 1200px !important;
+    height: 1200px !important;     // Le {!important} c'est pour forcer les nouveaux parametres
   }
 
   .restaurant__box__article {
@@ -28,9 +33,14 @@ $color-icons: #7e7e7e;
 }
 
 @media screen and (max-width: 375px) {
+
+  // Fonctionnement 375px 
+
   .fonctionnement__box__article__circle {
     left: 5%;
   }
+
+  // Restaurant 375px 
 
   .restaurant {
     height: 1350px;
@@ -50,6 +60,7 @@ $color-icons: #7e7e7e;
 }
 
 @media screen and (min-width: 768px) {
+
   // Mettre L'animation au milieu
 
   .lds-default {
@@ -60,6 +71,8 @@ $color-icons: #7e7e7e;
   .logo {
     max-height: 40px;
   }
+
+  // Fonctionnement 768px
 
   .fonctionnement {
     height: 200px;
@@ -82,6 +95,9 @@ $color-icons: #7e7e7e;
       }
     }
   }
+
+  // Restaurant 768px
+
   .restaurant__box__article__nouveau {
     left: 85%;
     height: 20px;
@@ -120,8 +136,10 @@ $color-icons: #7e7e7e;
   }
 
   .restaurant__box__img {
-    height: 18rem;
+    height: 18rem;      // Agrandir les images
   }
+
+  // Footer 768px
 
   footer {
     display: flex;
@@ -131,6 +149,7 @@ $color-icons: #7e7e7e;
 }
 
 @media screen and (min-width: 1024px) {
+
   // Mettre L'animation au milieu
 
   .lds-default {
@@ -149,11 +168,13 @@ $color-icons: #7e7e7e;
     }
   }
 
+  // Restaurant 1024px
+
   .restaurant {
     height: 900px;
 
     .restaurant__box {
-      display: grid;
+      display: grid;    // Creation d'une grid pour changer le placements des differents articles
       grid-template-columns: 1fr 20px 1fr 20px;
       grid-template-rows: repeat(2, 390px);
 
@@ -207,9 +228,9 @@ $color-icons: #7e7e7e;
         transition: opacity 300ms;
       }
     }
-
-    
   }
+
+  // Footer 1024px
 
   footer {
     height: 170px;
@@ -238,6 +259,8 @@ $color-icons: #7e7e7e;
     transform: scale(3);
   }
 
+  // Information 1440px
+
   .information__titre {
     font-size: 30px;
   }
@@ -254,6 +277,8 @@ $color-icons: #7e7e7e;
     font-size: 30px;
   }
 
+  // Fonctionnement 1440px
+
   .fonctionnement__box__article__paragraphe {
     font-size: 20px;
   }
@@ -261,6 +286,8 @@ $color-icons: #7e7e7e;
   .fonctionnement__box__article__circle {
     left: -11%;
   }
+
+  // Restaurant 1440px
 
   .restaurant {
     height: 950px;
@@ -271,7 +298,7 @@ $color-icons: #7e7e7e;
   }
 
   .restaurant__box {
-    grid-template-rows: repeat(2, 400px) !important;
+    grid-template-rows: repeat(2, 400px) !important;  // Pour résoudre le bug des margin bottom sur les articles
   }
 
   .restaurant__box__article {
@@ -288,6 +315,9 @@ $color-icons: #7e7e7e;
 }
 
 @media screen and (min-width: 1920px) {
+
+  // Header 1920px
+
   header {
     height: 150px;
   }
@@ -298,6 +328,8 @@ $color-icons: #7e7e7e;
     max-height: 60px;
   }
 
+  // Localisation 1920px
+
   .localisation {
     height: 100px;
   }
@@ -305,6 +337,8 @@ $color-icons: #7e7e7e;
   .localisation__info {
     font-size: 30px !important;
   }
+
+  // Information 1920px
 
   .information {
     height: 400px;
@@ -322,7 +356,7 @@ $color-icons: #7e7e7e;
     font-size: 30px;
   }
 
-  // fonctionnement
+  // Fonctionnement 1920px
 
   .fonctionnement {
     height: 300px;
@@ -366,6 +400,9 @@ $color-icons: #7e7e7e;
   .fonctionnement__box__article__paragraphe {
     font-size: 30px;
   }
+
+
+  // Restaurant 1920px
 
   .restaurant {
     height: 1500px;
@@ -413,6 +450,8 @@ $color-icons: #7e7e7e;
   .restaurant__box__img {
     height: 25rem;
   }
+
+  // Footer 1920px
 
   footer {
     height: 250px;

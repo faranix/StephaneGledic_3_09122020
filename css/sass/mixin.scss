@@ -1,28 +1,29 @@
-@mixin flexmid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@mixin flexmid {    // Permet de center les elements par rapport a leur parent
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin font-family-primary {    // La police principal
+    font-family: "Shrikhand", sans-serif;
+  }
 
-@mixin font-family-primary {
-  font-family: "Shrikhand", sans-serif;
-}
-
-@mixin font-family-secondary {
-  font-family: "Roboto", sans-serif;
-}
-
-@mixin restaurant-img__setting {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  max-height: 100%;
-  max-height: -webkit-fill-available;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  margin-bottom: -3px;
-}
-
-@mixin padding-width {
-  padding: 0 10px;
-}
+  @mixin font-family-secondary {    // La police secondaire 
+    font-family: "Roboto", sans-serif;
+  }
+  
+  @mixin restaurant-img__setting {    // Les parametres des images 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 100%;
+    max-height: -webkit-fill-available;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: -3px;
+  }
+  
+  @mixin padding-width {
+    padding: 0 10px;
+  }
+  
