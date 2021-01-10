@@ -21,6 +21,7 @@ a {
 
 .container {
   animation: pageAnimationAcceuil 4s;   // Annimation Opacité au chargement d'entrée sur la page
+  overflow: hidden;
 }
 
 body {

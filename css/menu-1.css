@@ -358,9 +358,6 @@ footer {
     position: relative;
     right: 170px; }
 
-  .background {
-    padding: 0 20px; }
-
   .presentation__boxtitre__heart {
     margin-left: 400px; }
 
@@ -467,7 +464,7 @@ footer {
     margin-top: -70px; }
 
   footer {
-    min-height: 180px; }
+    min-height: 200px; }
 
   .footer__titre {
     font-size: 25px !important; }
