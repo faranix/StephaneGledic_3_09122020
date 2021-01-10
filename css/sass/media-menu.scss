@@ -103,19 +103,32 @@
   
     // Animation overslide
   
-    .menu__article__container:hover + .menu__article__overlay {
+    .menu__article__container:hover + .menu__article__overlay, .menu__article__overlay:hover {
       left: 80%;
       width: 20%;
-      transition: 600ms;
+      transition: 600ms ease-out;
+      z-index: 0;
   
       .fa-check-circle {
-        animation: rotate 600ms;
+        animation: rotate 600ms ease;
       }
     }
+
+    .menu__article__container:hover > .menu__article__container__info > .menu__article__container__info__prix, .menu__article__container__info__prix:hover{
+      width: 22%;
+      transition: 620ms ease-out;
+    }
+
+    .menu__article__container__info__paragraphe:hover + .menu__article__container__info__prix, .menu__article__container__info__prix:hover{
+      width: 22%;
+      transition: 600ms ease-out;
+    }
   
-    .menu__article__container:hover {
-      width: 80%;
-      transition: 600ms;
+    .menu__article__container:hover{
+      z-index: 2;
+      width: 100%;
+      left: 60%;
+      transition: 600ms ease-out;
     }
   
     .commande__button {

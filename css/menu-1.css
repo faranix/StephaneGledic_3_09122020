@@ -28,6 +28,15 @@
     opacity: 0.5; }
   100% {
     opacity: 1; } }
+@keyframes check {
+  0% {
+    width: 0%; }
+  30% {
+    width: 30%; }
+  60% {
+    width: 60%; }
+  100% {
+    width: 80%; } }
 @keyframes pageAnimationMenu {
   0% {
     opacity: 0; }
@@ -252,6 +261,7 @@ main {
           overflow: hidden;
           margin-right: 5px; }
         .menu__article__container__info__prix {
+          width: 2%;
           font-size: 12px;
           font-weight: bold;
           margin-right: 5px;
@@ -276,7 +286,7 @@ main {
     .menu__article__container:hover + .menu__article__overlay {
       left: 80%;
       width: 20%;
-      transition: 600ms; }
+      transition: 1s; }
       .menu__article__container:hover + .menu__article__overlay .fa-check-circle {
         animation: rotate 600ms; }
     .menu__article__container:hover {
@@ -402,16 +412,27 @@ footer {
   .menu .menu__article__container .menu__article__container__info__prix {
     font-size: 14px; }
 
-  .menu__article__container:hover + .menu__article__overlay {
+  .menu__article__container:hover + .menu__article__overlay, .menu__article__overlay:hover {
     left: 80%;
     width: 20%;
-    transition: 600ms; }
-    .menu__article__container:hover + .menu__article__overlay .fa-check-circle {
-      animation: rotate 600ms; }
+    transition: 600ms ease-out;
+    z-index: 0; }
+    .menu__article__container:hover + .menu__article__overlay .fa-check-circle, .menu__article__overlay:hover .fa-check-circle {
+      animation: rotate 600ms ease; }
+
+  .menu__article__container:hover > .menu__article__container__info > .menu__article__container__info__prix, .menu__article__container__info__prix:hover {
+    width: 22%;
+    transition: 620ms ease-out; }
+
+  .menu__article__container__info__paragraphe:hover + .menu__article__container__info__prix, .menu__article__container__info__prix:hover {
+    width: 22%;
+    transition: 600ms ease-out; }
 
   .menu__article__container:hover {
-    width: 80%;
-    transition: 600ms; }
+    z-index: 2;
+    width: 100%;
+    left: 60%;
+    transition: 600ms ease-out; }
 
   .commande__button {
     font-size: 20px; }
