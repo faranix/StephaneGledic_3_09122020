@@ -96,7 +96,7 @@ main {
       cursor: pointer;
       opacity: 0;
 
-      &:active {
+      &:hover {
         opacity: 1;
         transition: opacity 400ms;
       }
@@ -188,7 +188,7 @@ main {
 
     // Animation des articles
 
-    &__container:active + &__overlay {
+    &__container:hover + &__overlay {
       left: 80%;
       width: 20%;
       transition: 600ms;
@@ -198,7 +198,7 @@ main {
       }
     }
 
-    &__container:active {
+    &__container:hover {
       width: 80%;
       transition: 600ms;
     }

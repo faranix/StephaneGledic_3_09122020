@@ -206,7 +206,7 @@ main {
       color: #9356dc;
       cursor: pointer;
       opacity: 0; }
-      .presentation__boxtitre__heart .heart:active {
+      .presentation__boxtitre__heart .heart:hover {
         opacity: 1;
         transition: opacity 400ms; }
 
@@ -273,13 +273,13 @@ main {
       border-bottom-right-radius: 10px; }
       .menu__article__overlay .fa-check-circle {
         font-size: 20px; }
-    .menu__article__container:active + .menu__article__overlay {
+    .menu__article__container:hover + .menu__article__overlay {
       left: 80%;
       width: 20%;
       transition: 600ms; }
-      .menu__article__container:active + .menu__article__overlay .fa-check-circle {
+      .menu__article__container:hover + .menu__article__overlay .fa-check-circle {
         animation: rotate 600ms; }
-    .menu__article__container:active {
+    .menu__article__container:hover {
       width: 80%;
       transition: 600ms; }
 

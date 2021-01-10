@@ -312,7 +312,7 @@ header {
           color: #9356dc;
           cursor: pointer;
           opacity: 0; }
-          .restaurant__box__article__litlebox .heart:active {
+          .restaurant__box__article__litlebox .heart:hover {
             opacity: 1; }
         .restaurant__box__article__litlebox .heart-font-size {
           font-size: 1.5rem; }
