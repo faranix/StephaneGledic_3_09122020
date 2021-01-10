@@ -28,6 +28,15 @@
     opacity: 0.5; }
   100% {
     opacity: 1; } }
+@keyframes check {
+  0% {
+    width: 0%; }
+  30% {
+    width: 30%; }
+  60% {
+    width: 60%; }
+  100% {
+    width: 80%; } }
 @keyframes pageAnimationMenu {
   0% {
     opacity: 0; }
@@ -206,7 +215,7 @@ main {
       color: #9356dc;
       cursor: pointer;
       opacity: 0; }
-      .presentation__boxtitre__heart .heart:active {
+      .presentation__boxtitre__heart .heart:hover {
         opacity: 1;
         transition: opacity 400ms; }
 
@@ -252,6 +261,7 @@ main {
           overflow: hidden;
           margin-right: 5px; }
         .menu__article__container__info__prix {
+          width: 2%;
           font-size: 12px;
           font-weight: bold;
           margin-right: 5px;
@@ -273,13 +283,13 @@ main {
       border-bottom-right-radius: 10px; }
       .menu__article__overlay .fa-check-circle {
         font-size: 20px; }
-    .menu__article__container:active + .menu__article__overlay {
+    .menu__article__container:hover + .menu__article__overlay {
       left: 80%;
       width: 20%;
-      transition: 600ms; }
-      .menu__article__container:active + .menu__article__overlay .fa-check-circle {
+      transition: 1s; }
+      .menu__article__container:hover + .menu__article__overlay .fa-check-circle {
         animation: rotate 600ms; }
-    .menu__article__container:active {
+    .menu__article__container:hover {
       width: 80%;
       transition: 600ms; }
 
@@ -358,9 +368,6 @@ footer {
     position: relative;
     right: 170px; }
 
-  .background {
-    padding: 0 20px; }
-
   .presentation__boxtitre__heart {
     margin-left: 400px; }
 
@@ -405,16 +412,27 @@ footer {
   .menu .menu__article__container .menu__article__container__info__prix {
     font-size: 14px; }
 
-  .menu__article__container:hover + .menu__article__overlay {
+  .menu__article__container:hover + .menu__article__overlay, .menu__article__overlay:hover {
     left: 80%;
     width: 20%;
-    transition: 600ms; }
-    .menu__article__container:hover + .menu__article__overlay .fa-check-circle {
-      animation: rotate 600ms; }
+    transition: 600ms ease-out;
+    z-index: 0; }
+    .menu__article__container:hover + .menu__article__overlay .fa-check-circle, .menu__article__overlay:hover .fa-check-circle {
+      animation: rotate 600ms ease; }
+
+  .menu__article__container:hover > .menu__article__container__info > .menu__article__container__info__prix, .menu__article__container__info__prix:hover {
+    width: 22%;
+    transition: 620ms ease-out; }
+
+  .menu__article__container__info__paragraphe:hover + .menu__article__container__info__prix, .menu__article__container__info__prix:hover {
+    width: 22%;
+    transition: 600ms ease-out; }
 
   .menu__article__container:hover {
-    width: 80%;
-    transition: 600ms; }
+    z-index: 2;
+    width: 100%;
+    left: 60%;
+    transition: 600ms ease-out; }
 
   .commande__button {
     font-size: 20px; }
@@ -467,7 +485,7 @@ footer {
     margin-top: -70px; }
 
   footer {
-    min-height: 180px; }
+    min-height: 200px; }
 
   .footer__titre {
     font-size: 25px !important; }

@@ -96,7 +96,7 @@ main {
       cursor: pointer;
       opacity: 0;
 
-      &:active {
+      &:hover {
         opacity: 1;
         transition: opacity 400ms;
       }
@@ -159,6 +159,7 @@ main {
         }
 
         &__prix {
+          width: 2%;
           font-size: 12px;
           font-weight: bold;
           margin-right: 5px;
@@ -188,17 +189,17 @@ main {
 
     // Animation des articles
 
-    &__container:active + &__overlay {
+    &__container:hover + &__overlay {
       left: 80%;
       width: 20%;
-      transition: 600ms;
+      transition: 1s;
 
       .fa-check-circle {
         animation: rotate 600ms;
       }
     }
 
-    &__container:active {
+    &__container:hover {
       width: 80%;
       transition: 600ms;
     }
