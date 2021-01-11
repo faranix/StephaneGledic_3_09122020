@@ -159,7 +159,7 @@ main {
         }
 
         &__prix {
-          width: 2%;
+          width: 5%;
           font-size: 12px;
           font-weight: bold;
           margin-right: 5px;
@@ -186,25 +186,24 @@ main {
         font-size: 20px;
       }
     }
-
-    // Animation des articles
-
-    &__container:hover + &__overlay {
-      left: 80%;
-      width: 20%;
-      transition: 1s;
-
-      .fa-check-circle {
-        animation: rotate 600ms;
-      }
-    }
-
-    &__container:hover {
-      width: 80%;
-      transition: 600ms;
-    }
   }
 }
+
+  // Animation des articles
+
+.menu__article:hover .menu__article__overlay {
+  left: 80%;
+  width: 20%;
+  transition: 600ms; }
+
+.menu__article:hover .menu__article__overlay .fa-check-circle {
+  animation: rotate 600ms; }
+
+.menu__article:hover .menu__article__container {
+  width: 80%;
+  transition: 600ms ; }
+
+
 
 // Animation des plats
 

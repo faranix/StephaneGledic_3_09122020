@@ -261,7 +261,7 @@ main {
           overflow: hidden;
           margin-right: 5px; }
         .menu__article__container__info__prix {
-          width: 2%;
+          width: 5%;
           font-size: 12px;
           font-weight: bold;
           margin-right: 5px;
@@ -283,15 +283,18 @@ main {
       border-bottom-right-radius: 10px; }
       .menu__article__overlay .fa-check-circle {
         font-size: 20px; }
-    .menu__article__container:hover + .menu__article__overlay {
-      left: 80%;
-      width: 20%;
-      transition: 1s; }
-      .menu__article__container:hover + .menu__article__overlay .fa-check-circle {
-        animation: rotate 600ms; }
-    .menu__article__container:hover {
-      width: 80%;
-      transition: 600ms; }
+
+.menu__article:hover .menu__article__overlay {
+  left: 80%;
+  width: 20%;
+  transition: 600ms; }
+
+.menu__article:hover .menu__article__overlay .fa-check-circle {
+  animation: rotate 600ms; }
+
+.menu__article:hover .menu__article__container {
+  width: 80%;
+  transition: 600ms; }
 
 #entree {
   animation: pageAnimationMenu 1500ms; }
@@ -364,6 +367,9 @@ footer {
     width: 100%;
     height: 0px; }
 
+  .menu__article__container__info__prix {
+    width: 3%; }
+
   .header__fleche {
     position: relative;
     right: 170px; }
@@ -412,27 +418,17 @@ footer {
   .menu .menu__article__container .menu__article__container__info__prix {
     font-size: 14px; }
 
-  .menu__article__container:hover + .menu__article__overlay, .menu__article__overlay:hover {
+  .menu__article:hover .menu__article__overlay {
     left: 80%;
     width: 20%;
-    transition: 600ms ease-out;
-    z-index: 0; }
-    .menu__article__container:hover + .menu__article__overlay .fa-check-circle, .menu__article__overlay:hover .fa-check-circle {
-      animation: rotate 600ms ease; }
+    transition: 600ms; }
 
-  .menu__article__container:hover > .menu__article__container__info > .menu__article__container__info__prix, .menu__article__container__info__prix:hover {
-    width: 22%;
-    transition: 620ms ease-out; }
+  .menu__article:hover .menu__article__overlay .fa-check-circle {
+    animation: rotate 600ms; }
 
-  .menu__article__container__info__paragraphe:hover + .menu__article__container__info__prix, .menu__article__container__info__prix:hover {
-    width: 22%;
-    transition: 600ms ease-out; }
-
-  .menu__article__container:hover {
-    z-index: 2;
-    width: 100%;
-    left: 60%;
-    transition: 600ms ease-out; }
+  .menu__article:hover .menu__article__container {
+    width: 80%;
+    transition: 600ms; }
 
   .commande__button {
     font-size: 20px; }
@@ -510,7 +506,7 @@ footer {
     font-size: 35px; }
 
   .images {
-    min-width: 1920px; }
+    min-width: 1900px; }
 
   .presentation__boxtitre__titre {
     font-size: 50px; }
